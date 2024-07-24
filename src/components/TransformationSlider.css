@@ -12,6 +12,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  transition: clip-path 0.1s ease;
 }
 
 .image-container img {
@@ -23,26 +24,28 @@
 .slider {
   position: absolute;
   top: 0;
-  width: 4px;
   height: 100%;
-  background: #000;
   cursor: pointer;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: left 0.1s ease;
 }
 
 .slider-handle {
   width: 20px;
   height: 20px;
-  background: #fff;
-  border: 2px solid #000;
+  background: #ffffff;
+  box-shadow: 0 0 0 5px rgba(85, 85, 85, 0.2);
+  border: 1px solid #000;
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-0%, -50%);
+  transform: translate(0%, -50%);
+  cursor: crosshair;
 }
+
 @media (min-width: 768px) {
   .transformation-slider {
     height: 500px;

@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { motion } from "framer-motion";
 import beforeImage from "../assets/6O9A2315.jpg";
 import afterImage from "../assets/landingSectionImg.jpg";
 
@@ -9,9 +8,10 @@ const TransformationSlider = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const sliderRef = useRef(null);
   const containerRef = useRef(null);
+  const isDragging = useRef(false);
 
   const handleMouseMove = (e) => {
-    if (!containerRef.current) return;
+    if (!isDragging.current || !containerRef.current) return;
     const containerRect = containerRef.current.getBoundingClientRect();
     let newSliderPosition =
       ((e.clientX - containerRect.left) / containerRect.width) * 100;
@@ -20,55 +20,51 @@ const TransformationSlider = () => {
     setSliderPosition(newSliderPosition);
   };
 
-  useEffect(() => {
-    const handleMouseUp = () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
-    };
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    window.removeEventListener("mousemove", handleMouseMove);
+    window.removeEventListener("mouseup", handleMouseUp);
+  };
 
+  const handleMouseDown = () => {
+    isDragging.current = true;
+    window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
+  };
+
+  useEffect(() => {
     return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
 
-  const handleMouseDown = () => {
-    window.addEventListener("mousemove", handleMouseMove);
-  };
-
   return (
     <div className="transformation-slider" ref={containerRef}>
-      <motion.div
+      <div
         className="image-container before"
-        initial={{ clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)" }}
-        animate={{
+        style={{
           clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)`,
         }}
-        transition={{ duration: 0.1 }}
       >
         <img src={beforeImage} alt="Before" />
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className="image-container after"
-        initial={{ clipPath: "polygon(50% 0, 100% 0, 100% 100%, 50% 100%)" }}
-        animate={{
+        style={{
           clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
         }}
-        transition={{ duration: 0.1 }}
       >
         <img src={afterImage} alt="After" />
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className="slider"
         ref={sliderRef}
-        initial={{ x: "50%" }}
-        animate={{ x: `${sliderPosition}%` }}
-        transition={{ duration: 0.1 }}
         onMouseDown={handleMouseDown}
         style={{ left: `${sliderPosition}%` }}
       >
         <div className="slider-handle"></div>
-      </motion.div>
+      </div>
     </div>
   );
 };
