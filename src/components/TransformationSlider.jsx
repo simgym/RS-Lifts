@@ -20,22 +20,38 @@ const TransformationSlider = () => {
     setSliderPosition(newSliderPosition);
   };
 
+  const handleTouchMove = (e) => {
+    if (!isDragging.current || !containerRef.current) return;
+    const containerRect = containerRef.current.getBoundingClientRect();
+    let newSliderPosition =
+      ((e.touches[0].clientX - containerRect.left) / containerRect.width) * 100;
+    if (newSliderPosition < 0) newSliderPosition = 0;
+    if (newSliderPosition > 100) newSliderPosition = 100;
+    setSliderPosition(newSliderPosition);
+  };
+
   const handleMouseUp = () => {
     isDragging.current = false;
     window.removeEventListener("mousemove", handleMouseMove);
     window.removeEventListener("mouseup", handleMouseUp);
+    window.removeEventListener("touchmove", handleTouchMove);
+    window.removeEventListener("touchend", handleMouseUp);
   };
 
   const handleMouseDown = () => {
     isDragging.current = true;
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
+    window.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("touchend", handleMouseUp);
   };
 
   useEffect(() => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseup", handleMouseUp);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleMouseUp);
     };
   }, []);
 
@@ -61,6 +77,7 @@ const TransformationSlider = () => {
         className="slider"
         ref={sliderRef}
         onMouseDown={handleMouseDown}
+        onTouchStart={handleMouseDown}
         style={{ left: `${sliderPosition}%` }}
       >
         <div className="slider-handle"></div>
