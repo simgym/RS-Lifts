@@ -1,12 +1,4 @@
 .landpageWrapper {
-  /* background: conic-gradient(
-    from 120deg at 0% 0%,
-    rgba(77, 81, 91, 1),
-    #36455a,
-    #121826,
-    rgba(24, 28, 40, 1),
-    rgba(17, 21, 32, 1)
-  ); */
   background: radial-gradient(
     circle at 0% 0%,
     rgba(77, 81, 91, 1),
@@ -16,15 +8,12 @@
     rgba(17, 21, 32, 1)
   );
   width: 100vw;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 2rem; */
 }
 
 .landNavWrapper {
-  /* border: 1px solid yellow; */
   width: 100%;
 }
 
@@ -33,68 +22,72 @@
   justify-content: center;
   /* border: 1px solid red; */
   width: 100%;
-  margin: 3rem 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* margin-bottom: 3rem; */
 }
 
 .landSectionCont {
   /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 2rem;
-  padding-right: 5%;
-  flex: 2;
+  padding: 2%;
+  flex: 1;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.landSecHead {
-  /* border: 1px solid orange; */
-  text-align: left;
-  font-size: 2.1rem;
-  color: rgb(255, 255, 255);
-}
-
-.landSecQuote {
-  /* border: 1px solid pink; */
-  text-align: left;
-  font-size: 1rem;
-}
-
-.landSecButton {
-  /* border: 1px solid white; */
+.landSectionCont p {
+  /* border: 1px solid red; */
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  font-size: 4.5vw;
+  opacity: 0;
+  color: white;
+  animation: slideUp 1s ease forwards;
+  animation-fill-mode: forwards;
 }
 
-.landSecButton button {
-  background-color: #e15119;
-  padding: 1rem 2rem;
-  /* width: 20%; */
-  border-radius: 0.3125rem;
-  font-size: 1rem;
-  border: none;
+.landSectionCont p:nth-child(1) {
+  animation-delay: 0.5s;
 }
 
-.landSecButton button:hover {
-  background-color: #a93d12;
+.landSectionCont p:nth-child(2) {
+  animation-delay: 1s;
 }
 
+.landSectionCont p:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.landSectionCont p {
+  text-shadow: 6px 6px 10px black;
+}
 .landSectionImg {
   /* border: 1px solid white; */
   flex: 1;
+  max-width: 100%;
+  /* box-shadow: 0 0 15px 8px rgba(255, 255, 255, 0.209); */
 }
 
 .landSectionImg img {
   width: 100%;
-  max-width: 25rem;
-  height: 100%;
-  border-radius: 1.25rem;
-  /* border: 1px solid white; */
+  height: auto;
 }
-
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    color: #e15119;
+  }
+  50% {
+    color: #e15119;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+  }
+}
 @media (max-width: 768px) {
   .landSectionWrapper {
     width: 100%;
@@ -102,21 +95,23 @@
   }
   .landSectionCont {
     /* padding-right: 1%; */
-    padding-left: 5%;
+    /* padding-left: 5%; */
   }
-  .landSecHead {
+  .landSectionCont p {
+    font-size: 1rem;
+  }
+  /* .landSecHead {
     font-size: 0.8rem;
   }
 
   .landSecQuote {
     font-size: 0.5rem;
-  }
+  } */
 
-  .landSecButton button {
-    /* width: 80%; */
+  /* .landSecButton button {
     font-size: 0.5rem;
     padding: 0.6rem 1.5rem;
-  }
+  } */
   /* .landSectionImg {
     padding-right: 3%;
   } */

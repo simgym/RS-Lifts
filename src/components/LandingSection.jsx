@@ -1,4 +1,4 @@
-import landingImg from "../assets/landingSectionImg.jpg";
+import landingImg from "../assets/6O9A2380.jpg";
 import Navbar from "./Navbar";
 import "./LandingSection.css";
 
@@ -8,7 +8,7 @@ const LandingSection = () => {
       <div className="landNavWrapper">
         <Navbar />
       </div>
-      <div className="landSectionWrapper">
+      {/* <div className="landSectionWrapper">
         <div className="landSectionCont">
           <span className="landSecHead">
             <h2>
@@ -28,6 +28,16 @@ const LandingSection = () => {
           <span className="landSecButton">
             <button>Get Started</button>
           </span>
+        </div>
+        <div className="landSectionImg">
+          <img src={landingImg} />
+        </div>
+      </div> */}
+      <div className="landSectionWrapper">
+        <div className="landSectionCont">
+          <p>DETERMINATION</p>
+          <p>ACTION</p>
+          <p>TRANSFORMATION</p>
         </div>
         <div className="landSectionImg">
           <img src={landingImg} />
