@@ -1,0 +1,101 @@
+.tfWrap {
+  /* border: 1px solid rgb(111, 229, 0); */
+}
+
+.tfSectionWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 100%;
+  /* margin: 3rem 0; */
+  padding-left: 5%;
+  /* padding-right: 5%; */
+  /* height: 30rem; */
+}
+
+.tfSectionCont {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-left: 5%;
+  flex: 2;
+}
+
+.tfSecHead {
+  /* border: 1px solid orange; */
+  text-align: left;
+  font-size: 2.1rem;
+  color: rgb(255, 255, 255);
+}
+
+.tfSecQuote {
+  /* border: 1px solid pink; */
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tfSecButton {
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tfSecButton button {
+  background-color: #e15119;
+  padding: 1rem 2rem;
+  /* width: 20%; */
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.tfButton button:hover {
+  background-color: #a93d12;
+}
+
+.tfSectionImg {
+  /* border: 1px solid white; */
+  flex: 1;
+}
+
+/* .tfSectionImg img {
+  width: 100%;
+  max-width: 25rem;
+  height: 100%;
+  border-radius: 1.25rem;
+} */
+
+@media (max-width: 768px) {
+  .tfSectionWrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .tfSectionCont {
+    /* padding-right: 1%; */
+    padding-left: 5%;
+  }
+  .tfSecHead {
+    font-size: 0.8rem;
+  }
+
+  .tfSecQuote {
+    font-size: 0.5rem;
+  }
+
+  .tfSecButton button {
+    /* width: 80%; */
+    font-size: 0.5rem;
+    padding: 0.6rem 1.5rem;
+  }
+  /* .landSectionImg {
+      padding-right: 3%;
+    } */
+  /* .tfsSectionImg img {
+    max-width: 18.75rem;
+  } */
+}

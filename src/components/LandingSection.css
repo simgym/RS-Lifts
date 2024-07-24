@@ -1,0 +1,126 @@
+.landpageWrapper {
+  /* background: conic-gradient(
+    from 120deg at 0% 0%,
+    rgba(77, 81, 91, 1),
+    #36455a,
+    #121826,
+    rgba(24, 28, 40, 1),
+    rgba(17, 21, 32, 1)
+  ); */
+  background: radial-gradient(
+    circle at 0% 0%,
+    rgba(77, 81, 91, 1),
+    #36455a,
+    #121826,
+    rgba(24, 28, 40, 1),
+    rgba(17, 21, 32, 1)
+  );
+  width: 100vw;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2rem; */
+}
+
+.landNavWrapper {
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+.landSectionWrapper {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 3rem 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.landSectionCont {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-right: 5%;
+  flex: 2;
+}
+
+.landSecHead {
+  /* border: 1px solid orange; */
+  text-align: left;
+  font-size: 2.1rem;
+  color: rgb(255, 255, 255);
+}
+
+.landSecQuote {
+  /* border: 1px solid pink; */
+  text-align: left;
+  font-size: 1rem;
+}
+
+.landSecButton {
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.landSecButton button {
+  background-color: #e15119;
+  padding: 1rem 2rem;
+  /* width: 20%; */
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.landSecButton button:hover {
+  background-color: #a93d12;
+}
+
+.landSectionImg {
+  /* border: 1px solid white; */
+  flex: 1;
+}
+
+.landSectionImg img {
+  width: 100%;
+  max-width: 25rem;
+  height: 100%;
+  border-radius: 1.25rem;
+  /* border: 1px solid white; */
+}
+
+@media (max-width: 768px) {
+  .landSectionWrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .landSectionCont {
+    /* padding-right: 1%; */
+    padding-left: 5%;
+  }
+  .landSecHead {
+    font-size: 0.8rem;
+  }
+
+  .landSecQuote {
+    font-size: 0.5rem;
+  }
+
+  .landSecButton button {
+    /* width: 80%; */
+    font-size: 0.5rem;
+    padding: 0.6rem 1.5rem;
+  }
+  /* .landSectionImg {
+    padding-right: 3%;
+  } */
+  .landSectionImg img {
+    max-width: 18.75rem;
+  }
+}
