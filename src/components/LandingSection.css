@@ -64,7 +64,13 @@
 .movingPill {
   width: 100px;
   height: 100%;
-  background-color: #318ce7;
+  /* background-color: #318ce7; */
+  background: radial-gradient(
+    circle at 125% 125%,
+    #31d2e8,
+    rgba(49, 210, 232, 1),
+    #4882ee
+  );
   border-radius: 50px;
   position: absolute;
   top: 0;
