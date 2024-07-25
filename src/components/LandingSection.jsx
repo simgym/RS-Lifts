@@ -8,39 +8,30 @@ const LandingSection = () => {
       <div className="landNavWrapper">
         <Navbar />
       </div>
-      {/* <div className="landSectionWrapper">
-        <div className="landSectionCont">
-          <span className="landSecHead">
-            <h2>
-              Build your body into{" "}
-              <span style={{ color: "#e15119" }}>healthy</span> and{" "}
-              <span style={{ color: "#e15119" }}>strong</span> body
-            </h2>
-          </span>
-          <span className="landSecQuote">
+
+      <div className="lsWrapper">
+        <div className="lsCont">
+          <div className="dat">
+            <div className="movingPill"></div>
+            <p>DETERMINATION ACTION TRANSFORMATION</p>
+          </div>
+          <div className="lsQuote">
+            <p>
+              <span className="lsShape">SHAPE</span> YOUR
+            </p>
+            <p>IDEAL BODY</p>
+          </div>
+          <div className="lsMission">
             <p>
               Achieve natural fitness and health through expert guidance. Make
               fitness a part of everyday life for a happy, healthy lifestyle.
               Focus on holistic well-being to live with energy, confidence, and
               longevity. Simple knowledge for a better life.
             </p>
-          </span>
-          <span className="landSecButton">
-            <button>Get Started</button>
-          </span>
+          </div>
         </div>
-        <div className="landSectionImg">
-          <img src={landingImg} />
-        </div>
-      </div> */}
-      <div className="landSectionWrapper">
-        <div className="landSectionCont">
-          <p>DETERMINATION</p>
-          <p>ACTION</p>
-          <p>TRANSFORMATION</p>
-        </div>
-        <div className="landSectionImg">
-          <img src={landingImg} />
+        <div className="lsImg">
+          <img src={landingImg} alt="Landing Image" />
         </div>
       </div>
     </div>

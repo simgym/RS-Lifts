@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Lexend:wght@100..900&family=Merienda:wght@300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,8 @@
   /* line-height: 1.5; */
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(65, 73, 92);
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

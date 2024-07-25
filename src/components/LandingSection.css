@@ -1,121 +1,200 @@
 .landpageWrapper {
-  background: radial-gradient(
-    circle at 0% 0%,
-    rgba(77, 81, 91, 1),
-    #36455a,
-    #121826,
-    rgba(24, 28, 40, 1),
-    rgba(17, 21, 32, 1)
-  );
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
 }
 
 .landNavWrapper {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
-.landSectionWrapper {
+.lsWrapper {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.lsImg {
+  flex: 1;
+  min-width: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
-  width: 100%;
-  /* margin-bottom: 3rem; */
 }
 
-.landSectionCont {
-  /* border: 1px solid yellow; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 2%;
-  flex: 1;
-  font-family: "Zilla Slab", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.landSectionCont p {
-  /* border: 1px solid red; */
-  width: 100%;
-  font-size: 4.5vw;
-  opacity: 0;
-  color: white;
-  animation: slideUp 1s ease forwards;
-  animation-fill-mode: forwards;
-}
-
-.landSectionCont p:nth-child(1) {
-  animation-delay: 0.5s;
-}
-
-.landSectionCont p:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.landSectionCont p:nth-child(3) {
-  animation-delay: 1.5s;
-}
-.landSectionCont p {
-  text-shadow: 6px 6px 10px black;
-}
-.landSectionImg {
-  /* border: 1px solid white; */
-  flex: 1;
-  max-width: 100%;
-  /* box-shadow: 0 0 15px 8px rgba(255, 255, 255, 0.209); */
-}
-
-.landSectionImg img {
+.lsImg img {
   width: 100%;
   height: auto;
 }
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-    color: #e15119;
+
+.lsCont {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* border: 1px solid red; */
+  padding: 5%;
+  /* background: radial-gradient(
+    ellipse at 0% 0%,
+    #a0d0ff,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  ); */
+}
+
+.dat {
+  border-radius: 50px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.movingPill {
+  width: 100px;
+  height: 100%;
+  background-color: #318ce7;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  animation: movePill 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes movePill {
+  0%,
+  100% {
+    left: 0;
   }
   50% {
-    color: #e15119;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    color: white;
+    left: calc(100% - 100px);
   }
 }
-@media (max-width: 768px) {
-  .landSectionWrapper {
+
+.dat p {
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.lsQuote {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 5rem;
+  width: 100%;
+}
+
+.lsQuote p {
+  font-weight: 800;
+}
+
+.lsMission {
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.lsShape {
+  font-family: "Bungee Outline", sans-serif;
+  font-style: normal;
+  color: #318ce7;
+}
+
+/* @media (max-width: 1024px) {
+  .lsWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .lsImg,
+  .lsCont {
+    min-width: 100%;
+  }
+
+  .lsQuote {
+    font-size: 4rem;
+  }
+  .dat {
     width: 100%;
-    padding: 0;
+    margin-top: 2%;
   }
-  .landSectionCont {
-    /* padding-right: 1%; */
-    /* padding-left: 5%; */
+  .lsCont {
+    padding: 0%;
   }
-  .landSectionCont p {
+  .dat p {
+    font-size: 1.8rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  .lsWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .lsImg,
+  .lsCont {
+    min-width: 100%;
+  }
+  .lsQuote {
+    font-size: 3rem;
+    /* margin-top: 10%;
+    margin-bottom: 15%; */
+    width: 80%;
+    text-align: center;
+  }
+  .dat {
+    width: 100%;
+    margin-top: 2%;
+    padding: 15px 20px;
+  }
+  .lsCont {
+    padding: 0%;
+  }
+
+  .dat p {
+    font-size: 1.5rem;
+  }
+
+  .lsMission {
     font-size: 1rem;
+    width: 80%;
   }
-  /* .landSecHead {
-    font-size: 0.8rem;
+  .movingPill {
+    animation: movePill 8s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .lsQuote {
+    font-size: 2.5rem;
+    /* margin-top: 15%;
+    margin-bottom: 20%; */
+  }
+  .dat {
+    padding: 5px 20px;
+  }
+  .dat p {
+    font-size: 1.2rem;
   }
 
-  .landSecQuote {
-    font-size: 0.5rem;
-  } */
-
-  /* .landSecButton button {
-    font-size: 0.5rem;
-    padding: 0.6rem 1.5rem;
-  } */
-  /* .landSectionImg {
-    padding-right: 3%;
-  } */
-  .landSectionImg img {
-    max-width: 18.75rem;
+  .lsMission {
+    font-size: 0.9rem;
+  }
+  .movingPill {
+    animation: movePill 5s linear infinite;
   }
 }
