@@ -32,12 +32,12 @@ const Plans = () => {
 
   const bottomPlans = [
     {
-      name: "ONLINE VIDEO/VOICE CONSULTATION",
+      name: "VIDEO/VOICE CONSULTATION",
       desc: "30 Minutes Video Consultation with Rohit",
       img: consultImg,
     },
     {
-      name: "ONLINE ONE TO ONE PERSONAL TRAINING",
+      name: " ONE TO ONE PERSONAL TRAINING",
       desc: "Online Live Transformation Video on Video Call",
       img: consultImg,
     },
@@ -85,24 +85,31 @@ const Plans = () => {
           </div>
         ))}
       </div>
-      {/* <div className="bottomPlansWrap">
+      <div className="onlineSessions">
+        <h2>ONLINE GUIDE</h2>
+      </div>
+      <div className="bottomPlansWrap">
         {bottomPlans.map((item, index) => (
           <div className="bottomPlan" key={index}>
-            <div className="bottomPlanName">{item.name}</div>
+            <div className="bottomPlanName">
+              <p>{item.name}</p>
+            </div>
             <div className="bottomPlanFoot">
               <span className="bottomPlanDescButton">
-                <div>{item.desc} </div>
+                <div className="bottomPlanDesc">
+                  <p>{item.desc}</p>
+                </div>
+                <div className="bottomPlanButton">
+                  <button>Check</button>
+                </div>
               </span>
               <span className="bottomPlanImg">
                 <img src={item.img} />
               </span>
             </div>
-            <div className="bottomPlanButton">
-              <button>Check</button>
-            </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };

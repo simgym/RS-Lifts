@@ -10,6 +10,7 @@
   gap: 2%;
   padding: 0% 1%;
   /* border: 1px solid red; */
+  overflow-x: scroll;
 }
 .superPlans {
   font-family: "Roboto", sans-serif;
@@ -19,7 +20,7 @@
   margin-bottom: 2%;
 }
 .otherPlan {
-  box-shadow: 0 0 50px rgb(170, 255, 169);
+  /* box-shadow: 0 0 50px rgb(170, 255, 169); */
   /* background-color: white; */
   /* background: radial-gradient(
     circle at bottom right,
@@ -39,7 +40,7 @@
     rgb(255, 157, 129) 24.3%,
     rgb(255, 78, 78) 78.3%
   );
-  box-shadow: 0 0 50px rgb(255, 78, 78);
+  /* box-shadow: 0 0 50px rgb(255, 78, 78); */
 }
 
 .shreadPlan {
@@ -49,7 +50,7 @@
     rgba(49, 210, 232, 1),
     #4882ee
   );
-  box-shadow: 0 0 50px #31d2e8;
+  /* box-shadow: 0 0 50px #31d2e8; */
 }
 
 .topPlanHead {
@@ -65,10 +66,10 @@
   padding: 2% 0%;
 }
 
-.shreadPlan .topPlanName p {
+/* .shreadPlan .topPlanName p {
   color: white;
   text-align: center;
-}
+} */
 
 .topPlanServicesImg {
   display: flex;
@@ -115,6 +116,7 @@
 .topPlanImg img {
   width: 100%;
   height: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.554);
 }
 
 .topPlanFoot {
@@ -134,9 +136,9 @@
   font-weight: 800;
   /* font-size: 1.2rem; */
 }
-.shreadPlan .topPlanDesc p {
+/* .shreadPlan .topPlanDesc p {
   color: white;
-}
+} */
 .topPlanButton {
   /* border: 1px solid black; */
   display: flex;
@@ -161,53 +163,101 @@
 .topPlanButton button {
   background: rgba(0, 0, 0, 0.785);
   color: white;
+  border-radius: 9999px;
 }
 .bottomPlansWrap {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   gap: 10%;
   padding: 1%;
 }
+.onlineSessions {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  margin-top: 2%;
+}
 .bottomPlan {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
+  border: 2px solid #4882ee;
+  padding-bottom: 2%;
 }
 .bottomPlanName {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   background: radial-gradient(
     circle at 125% 125%,
-
-    #4882ee,
+    #31d2e8,
     rgba(49, 210, 232, 1),
-    #31d2e8
+    #4882ee
   );
   color: white;
   font-weight: 800;
   padding: 2%;
   font-size: 1.2rem;
 }
-.bottomPlanDescImg {
+/* .bottomPlanDescImg {
   display: flex;
   align-items: center;
   padding: 2%;
   border: 1px solid red;
+}*/
+
+.bottomPlanFoot {
+  display: flex;
+  align-items: center;
+  /* padding: 2%;
+  border: 1px solid red; */
+  gap: 2%;
+}
+.bottomPlanDescButton {
+  /* border: 1px solid rgb(73, 73, 1); */
+  flex: 1;
+  display: flex;
+  padding-left: 2%;
+  flex-direction: column;
+}
+/* .bottomPlanButton {
+  border: 1px solid blue;
+} */
+.bottomPlanButton button {
+  background: radial-gradient(
+    circle at 125% 125%,
+    #31d2e8,
+    rgba(49, 210, 232, 1),
+    #4882ee
+  );
+  font-weight: 600;
+  border: none;
 }
 .bottomPlanDesc {
   text-align: left;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   flex: 1;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 15%;
+}
+.bottomPlanButton {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  padding: 2% 2% 2% 0%;
+}
+.bottomPlanButton button {
+  padding: 1rem 2rem;
+  border-radius: 9999px;
 }
 .bottomPlanImg {
-  border: 1px solid black;
+  /* border: 1px solid rgb(130, 11, 11); */
   flex: 1;
   font-size: 4rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .bottomPlanImg img {
   width: 100%;
@@ -215,26 +265,45 @@
 }
 
 @media (min-width: 769px) {
-  .superPlans {
+  .plansWrap {
+    padding: 3% 0%;
+    /* border: 1px solid black; */
+  }
+  .topPlansWrap {
+    padding: 1% 1%;
+  }
+  .superPlans,
+  .onlineSessions {
     font-size: 2.5rem;
   }
   .topPlansWrap {
     flex-direction: row;
   }
+  /* .topPlanServices p {
+    font-size: 1rem;
+  }
+  .topPlanDesc {
+    font-size: 0.8rem;
+  } */
+  .topPlanButton {
+    padding-right: 2%;
+  }
 }
 
 @media (max-width: 768px) {
-  .superPlans {
-    margin-top: 5%;
-    font-size: 2.5rem;
+  .superPlans,
+  .onlineSessions {
+    margin-top: 3%;
+    font-size: 1.9rem;
+    margin-bottom: 3%;
+  }
+  .onlineSessions {
+    margin-top: 0%;
   }
   .otherPlan,
   .shreadPlan,
   .beginningPlan {
     margin-bottom: 10%;
-  }
-  .beginningPlan {
-    margin-top: 10%;
   }
   .topPlansWrap {
     flex-direction: column;
@@ -247,11 +316,51 @@
   .topPlanServices p {
     font-size: 1rem;
   }
+  .bottomPlan {
+    margin-bottom: 10%;
+  }
+  .bottomPlansWrap {
+    flex-direction: column;
+  }
+  .bottomPlanName {
+    padding: 3% 0%;
+  }
+  .bottomPlanImg {
+    margin-bottom: 2%;
+  }
+  .bottomPlanImg img {
+    width: 100%;
+  }
+
+  .bottomPlanFoot {
+    flex-direction: column-reverse;
+  }
+  .bottomPlanDescButton {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottomPlanDesc {
+    flex: 2;
+    font-size: 1.5rem;
+    margin-bottom: 0%;
+  }
+  .bottomPlanButton {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .bottomPlanButton button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 426px) {
-  .superPlans {
-    font-size: 1.8rem;
+  .superPlans,
+  .onlineSessions {
+    font-size: 1.7rem;
   }
   .otherPlan,
   .shreadPlan,
@@ -287,5 +396,11 @@
   }
   .topPlanButton button {
     width: 80%;
+  }
+  .bottomPlanDesc {
+    font-size: 1rem;
+  }
+  .bottomPlanName {
+    font-size: 1rem;
   }
 }
