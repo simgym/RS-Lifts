@@ -1,4 +1,7 @@
 import beforeImage from "../assets/6O9A2315.jpg";
+import consultImg from "../assets/consult.jpg";
+import { IoMdCall } from "react-icons/io";
+import { GiBiceps } from "react-icons/gi";
 import "./Plans.css";
 
 const Plans = () => {
@@ -10,7 +13,7 @@ const Plans = () => {
       desc: "8-week STRONG FOUNDATION plan to kickstart your fitness journey",
     },
     {
-      name: "SHREAD",
+      name: "SHRED",
       services: [
         "Enhance Defination",
         "Build Lean Muscles",
@@ -31,20 +34,29 @@ const Plans = () => {
     {
       name: "ONLINE VIDEO/VOICE CONSULTATION",
       desc: "30 Minutes Video Consultation with Rohit",
-      img: {},
+      img: consultImg,
     },
     {
       name: "ONLINE ONE TO ONE PERSONAL TRAINING",
       desc: "Online Live Transformation Video on Video Call",
-      img: {},
+      img: consultImg,
     },
   ];
   return (
     <div className="plansWrap">
+      <div className="superPlans">
+        <h2>SUPER PLANS</h2>
+      </div>
       <div className="topPlansWrap">
         {topPlans.map((item, index) => (
           <div
-            className={`${item.name === "SHREAD" ? "shreadPlan" : "otherPlan"}`}
+            className={`${
+              item.name === "SHRED"
+                ? "shreadPlan"
+                : item.name === "BEGINNING"
+                ? "beginningPlan"
+                : "otherPlan"
+            }`}
             key={index}
           >
             <div className="topPlanHead">
@@ -77,8 +89,10 @@ const Plans = () => {
         {bottomPlans.map((item, index) => (
           <div className="bottomPlan" key={index}>
             <div className="bottomPlanName">{item.name}</div>
-            <div className="bottomPlanDescImg">
-              <span className="bottomPlanDesc">{item.desc}</span>
+            <div className="bottomPlanFoot">
+              <span className="bottomPlanDescButton">
+                <div>{item.desc} </div>
+              </span>
               <span className="bottomPlanImg">
                 <img src={item.img} />
               </span>
