@@ -1,3 +1,4 @@
+import beforeImage from "../assets/6O9A2315.jpg";
 import "./Plans.css";
 
 const Plans = () => {
@@ -5,8 +6,8 @@ const Plans = () => {
     {
       name: "BEGINNING",
       services: ["Build Foundation", "Master Basics", "Start Strong"],
-      img: {},
-      desc: "A 8-week STRONG FOUNDATION plan to kickstart your fitness journey.",
+      img: beforeImage,
+      desc: "8-week STRONG FOUNDATION plan to kickstart your fitness journey",
     },
     {
       name: "SHREAD",
@@ -15,14 +16,14 @@ const Plans = () => {
         "Build Lean Muscles",
         "Overcome Plateaus",
       ],
-      img: {},
-      desc: "A 12-week PROGRESSIVELY INTENSE program to shred fat and get lean.",
+      img: beforeImage,
+      desc: "12-week PROGRESSIVELY INTENSE program to shred fat and get lean",
     },
     {
       name: "BULK",
       services: ["Build Muscles", "Build Strength", "Elevate Performance"],
-      img: {},
-      desc: "A 12-week ESCALATING INTENSITY plan to build muscle and gain strength.",
+      img: beforeImage,
+      desc: "12-week ESCALATING INTENSITY plan to build muscle and gain strength",
     },
   ];
 
@@ -42,31 +43,37 @@ const Plans = () => {
     <div className="plansWrap">
       <div className="topPlansWrap">
         {topPlans.map((item, index) => (
-          <div className="topPlan" key={index}>
+          <div
+            className={`${item.name === "SHREAD" ? "shreadPlan" : "otherPlan"}`}
+            key={index}
+          >
             <div className="topPlanHead">
-              <div className="topPlanServices">
-                {item.services.map((service, ind) => (
-                  <p key={ind}>{service}</p>
-                ))}
+              <div className="topPlanName">
+                <p>SUPER {item.name}</p>
               </div>
-              <div className="topPlanNameImg">
-                <div className="topPlanName">
-                  <p>SUPER</p>
-                  <p>{item.name}</p>
+              <div className="topPlanServicesImg">
+                <div className="topPlanServices">
+                  {item.services.map((service, ind) => (
+                    <p key={ind}>{service}</p>
+                  ))}
                 </div>
                 <div className="topPlanImg">
                   <img src={item.img} />
                 </div>
               </div>
             </div>
-            <div className="topPlanDesc">{item.desc}</div>
-            <div className="topPlanButton">
-              <button>Check</button>
+            <div className="topPlanFoot">
+              <div className="topPlanDesc">
+                <p>{item.desc}</p>
+              </div>
+              <div className="topPlanButton">
+                <button>Check</button>
+              </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="bottomPlansWrap">
+      {/* <div className="bottomPlansWrap">
         {bottomPlans.map((item, index) => (
           <div className="bottomPlan" key={index}>
             <div className="bottomPlanName">{item.name}</div>
@@ -81,7 +88,7 @@ const Plans = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

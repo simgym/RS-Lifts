@@ -54,7 +54,9 @@
 .dat {
   border-radius: 50px;
   border: 2px solid transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+  /* box-shadow: 0 0 150px #31d2e8; */
+
   padding: 15px 20px;
   display: inline-block;
   position: relative;
@@ -121,30 +123,30 @@
   color: #318ce7;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .lsWrapper {
     flex-direction: column-reverse;
   }
 
-  .lsImg,
+  /* .lsImg,
   .lsCont {
     min-width: 100%;
-  }
+  } */
 
-  .lsQuote {
+  /* .lsQuote {
     font-size: 4rem;
-  }
+  } */
   .dat {
     width: 100%;
     margin-top: 2%;
   }
-  .lsCont {
+  /* .lsCont {
     padding: 0%;
-  }
+  } */
   .dat p {
     font-size: 1.8rem;
   }
-} */
+}
 
 @media (max-width: 768px) {
   .lsWrapper {
@@ -163,8 +165,8 @@
     text-align: center;
   }
   .dat {
-    width: 100%;
-    margin-top: 2%;
+    width: 95%;
+    margin-top: 5%;
     padding: 15px 20px;
   }
   .lsCont {
@@ -172,7 +174,7 @@
   }
 
   .dat p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .lsMission {
@@ -191,10 +193,11 @@
     margin-bottom: 20%; */
   }
   .dat {
-    padding: 5px 20px;
+    padding: 10px 20px;
+    /* box-shadow: 0 0 35px #31d2e8; */
   }
   .dat p {
-    font-size: 1.2rem;
+    font-size: 0.65rem;
   }
 
   .lsMission {

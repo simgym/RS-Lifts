@@ -91,15 +91,19 @@
 
 .tfSectionImg {
   /* border: 1px solid white; */
+  width: 100%;
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
-/* .tfSectionImg img {
+.tfSectionImg img {
   width: 100%;
   max-width: 25rem;
   height: 100%;
-  border-radius: 1.25rem;
-} */
+  /* border: 1px solid white; */
+  /* border-radius: 1.25rem; */
+}
 
 @media (max-width: 768px) {
   .tfSectionWrapper {
@@ -109,7 +113,7 @@
   .tfSectionCont {
     /* padding-right: 1%; */
     padding-left: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
   }
   .tfSecHead {
     font-size: 0.8rem;
