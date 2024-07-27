@@ -1,0 +1,168 @@
+.coach-container {
+  /* background-color: #002244; */
+  /* background: radial-gradient(
+    circle at 125% 125%,
+    #4882ee,
+    rgba(49, 210, 232, 1),
+    #31d2e8
+  ); */
+  padding: 2rem 0;
+  /* border: 1px solid rgb(225, 36, 178); */
+}
+
+.coach-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  /* border: 1px solid rgb(242, 245, 47); */
+}
+
+.coach-title {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  /* border: 1px solid white; */
+  font-style: normal;
+}
+
+/* .coach-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  border: 1px solid rgb(255, 255, 255);
+} */
+.coach-imgDesc {
+  display: flex;
+  /* border: 1px solid red; */
+}
+.coach-image-container {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  /* padding: 1rem; */
+  /* border: 1px solid yellowgreen; */
+  display: flex;
+  align-items: center;
+}
+
+.coach-image {
+  width: 100%;
+  height: auto;
+}
+
+.coach-details {
+  flex: 1;
+  /* max-width: 45%; */
+  width: 100%;
+  /* margin: 1rem; */
+  padding: 1rem;
+  /* border: 1px solid orange; */
+}
+
+.coach-name {
+  /* background-color: white; */
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: #4698ea;
+}
+
+.coach-description {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: left;
+  /* border: 1px solid rgb(0, 255, 170); */
+  flex: 2;
+  padding-left: 4%;
+}
+.coach-learn-Social {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+}
+.coach-learn-more {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  /* border: 1px solid rgb(44, 255, 37); */
+  flex: 2.2;
+}
+
+.coach-learn-more-btn {
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+}
+
+.coach-social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  /* border: 1px solid rgb(255, 33, 33); */
+  flex: 1;
+}
+
+.coach-social-link {
+  color: #4698ea;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+@media (max-width: 768px) {
+  .coach-title {
+    font-size: 2rem;
+  }
+  .coach-name {
+    font-size: 2rem;
+  }
+  .coach-image-container {
+    flex: 1;
+  }
+  .coach-description {
+    font-size: 0.8rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .coach-learn-more-btn {
+    font-size: 0.6rem;
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .coach-inner {
+    padding: 0;
+  }
+  .coach-title {
+    font-size: 1.5rem;
+  }
+  .coach-name {
+    font-size: 1.2rem;
+  }
+
+  .coach-description {
+    color: rgb(0, 0, 0);
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  .coach-social-icons a {
+    font-size: 0.8rem;
+  }
+  .coach-learn-more-btn {
+    font-size: 0.6rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

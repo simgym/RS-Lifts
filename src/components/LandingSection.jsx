@@ -1,5 +1,6 @@
 import landingImg from "../assets/first.jpg";
 import Navbar from "./Navbar";
+import PermanentDiscount from "./PermanentDiscount";
 import "./LandingSection.css";
 
 const LandingSection = () => {
@@ -7,13 +8,14 @@ const LandingSection = () => {
     <div className="landpageWrapper">
       <div className="landNavWrapper">
         <Navbar />
+        <PermanentDiscount />
       </div>
 
       <div className="lsWrapper">
         <div className="lsCont">
           <div className="dat">
             <div className="movingPill"></div>
-            <p>DETERMINATION ACTION TRANSFORMATION</p>
+            <p>DETERMINATION-ACTION-TRANSFORMATION</p>
           </div>
           <div className="lsQuote">
             <p>

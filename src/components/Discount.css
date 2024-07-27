@@ -6,6 +6,7 @@
   justify-content: space-between;
   min-width: 40rem;
   min-height: 20rem;
+  /* box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.455); */
 }
 .dsHead {
   /* border: 1px solid green; */
@@ -71,6 +72,36 @@
   font-weight: 500;
   font-size: 1.2rem;
 }
+/* PERMANENT DISCOUNT */
+.pdWrap {
+  background-color: #ffd700;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5% 2%;
+}
+.pdCont {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+  flex: 2;
+  font-weight: 600;
+}
+.pdTime {
+  /* border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  color: red;
+}
+.pdTime button {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.853);
+  border-radius: 9999px;
+  border: none;
+  color: rgb(255, 255, 255);
+}
 @media (max-width: 768px) {
   .dsWrap {
     min-width: 20rem;
@@ -85,5 +116,40 @@
   }
   .hurry {
     font-size: 1rem;
+  }
+  .pdWrap {
+    /* flex-direction: column; */
+    padding: 0.5% 0.5%;
+  }
+  .pdCont {
+    flex: 2;
+
+    font-size: 0.7rem;
+  }
+  .pdTime {
+    font-size: 0.7rem;
+  }
+  .pdTime button {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 510px) {
+  .pdWrap {
+    flex-direction: column;
+    padding: 0.5% 0.5%;
+  }
+  .pdCont {
+    gap: 1%;
+    flex: 2;
+    font-weight: 600;
+    font-size: 0.7rem;
+    justify-content: center;
+  }
+  .pdTime {
+    font-size: 0.7rem;
+    justify-content: space-evenly;
+  }
+  .pdTime button {
+    font-size: 0.8rem;
   }
 }
