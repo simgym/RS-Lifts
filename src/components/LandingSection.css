@@ -7,7 +7,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 2;
 }
 
 .lsWrapper {
@@ -92,9 +92,9 @@
 
 .dat p {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 

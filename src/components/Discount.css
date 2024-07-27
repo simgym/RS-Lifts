@@ -1,0 +1,89 @@
+.dsWrap {
+  background-color: #ffd700;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 40rem;
+  min-height: 20rem;
+}
+.dsHead {
+  /* border: 1px solid green; */
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+.dsAmt {
+  color: #ffd700;
+  font-size: 2.5rem;
+}
+.dsCont {
+  padding: 2%;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  min-height: 10rem;
+}
+.dsCont h2 {
+  font-size: 1.5rem;
+
+  /* border: 1px solid red; */
+  flex: 1.5;
+}
+.dsButton {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 2%;
+}
+.dsButton button {
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.853);
+
+  /* border: 2px solid white; */
+  padding: 1rem 2rem;
+  /* width: 20%; */
+  /* border-radius: 0.3125rem; */
+  border-radius: 9999px;
+  font-size: 1rem;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+.dsTimeCont {
+  /* border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dsTime {
+  /* border: 1px solid black; */
+  color: red;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.hurry {
+  /* border: 1px solid green; */
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .dsWrap {
+    min-width: 20rem;
+  }
+
+  .dsCont h2 {
+    font-size: 1.2rem;
+  }
+
+  .dsTime {
+    font-size: 1.1rem;
+  }
+  .hurry {
+    font-size: 1rem;
+  }
+}
