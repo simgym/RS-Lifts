@@ -8,7 +8,7 @@ const LandingSection = () => {
     <div className="landpageWrapper">
       <div className="landNavWrapper">
         <Navbar />
-        <PermanentDiscount />
+        {/* <PermanentDiscount /> */}
       </div>
 
       <div className="lsWrapper">

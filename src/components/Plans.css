@@ -275,6 +275,38 @@
   width: 100%;
   height: auto;
 }
+/*------------------------------------*/
+.sliderContainer {
+  /* border: 1px solid red; */
+}
+.topPlanSlider {
+  /* border: 1px solid blue; */
+}
+.planInd {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 2% 0%;
+}
+.normInd {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: rgba(147, 147, 147, 0.561);
+}
+/* .leftTopInd {
+  color: rgb(255, 78, 78);
+}
+.midTopInd,
+.leftBottomInd,
+.rightBottomInd {
+  color: #4882ee;
+}
+.rightTopInd {
+  color: rgb(17, 255, 189);
+} */
 
 @media (min-width: 769px) {
   .plansWrap {
@@ -315,10 +347,11 @@
   .otherPlan,
   .shreadPlan,
   .beginningPlan {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   .topPlansWrap {
     flex-direction: column;
+    /* overflow-x: scroll; */
   }
 
   .topPlanName {
@@ -329,7 +362,7 @@
     font-size: 1rem;
   }
   .bottomPlan {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   .bottomPlansWrap {
     flex-direction: column;
@@ -372,7 +405,7 @@
 @media (max-width: 426px) {
   .superPlans,
   .onlineSessions {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .otherPlan,
   .shreadPlan,

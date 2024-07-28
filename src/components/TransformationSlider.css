@@ -44,6 +44,7 @@
   top: 50%;
   transform: translate(0%, -50%);
   cursor: crosshair;
+  z-index: 0;
 }
 
 @media (min-width: 768px) {
