@@ -2,16 +2,20 @@
   padding: 3% 3%;
   /* border: 1px solid black; */
 }
-
-.topPlansWrap {
+.plansContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2%;
   padding: 0% 1%;
-  /* border: 1px solid red; */
-  /* overflow-x: scroll; */
 }
+/* .topPlansWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 0% 1%;
+} */
 .superPlans {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -178,7 +182,6 @@
   border-radius: 9999px;
 }
 .bottomPlansWrap {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   gap: 10%;

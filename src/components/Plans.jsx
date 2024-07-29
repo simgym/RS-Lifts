@@ -44,11 +44,12 @@ const Plans = () => {
   ];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
-  const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
+  // const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+  const [animationClass, setAnimationClass] = useState("");
 
   const topSliderRef = useRef(null);
-  const bottomSliderRef = useRef(null);
+  // const bottomSliderRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -60,7 +61,7 @@ const Plans = () => {
 
   useEffect(() => {
     const topSlider = topSliderRef.current;
-    const bottomSlider = bottomSliderRef.current;
+    // const bottomSlider = bottomSliderRef.current;
 
     let startX, endX;
 
@@ -75,10 +76,10 @@ const Plans = () => {
     const handleTouchEnd = () => {
       if (startX - endX > 50) {
         handleTopNext();
-        handleBottomNext();
+        // handleBottomNext();
       } else if (endX - startX > 50) {
         handleTopPrev();
-        handleBottomPrev();
+        // handleBottomPrev();
       }
     };
 
@@ -88,11 +89,15 @@ const Plans = () => {
       topSlider.addEventListener("touchend", handleTouchEnd);
     }
 
-    if (bottomSlider) {
-      bottomSlider.addEventListener("touchstart", handleTouchStart);
-      bottomSlider.addEventListener("touchmove", handleTouchMove);
-      bottomSlider.addEventListener("touchend", handleTouchEnd);
-    }
+    // if (bottomSlider) {
+    //   bottomSlider.addEventListener("touchstart", handleTouchStart);
+    //   bottomSlider.addEventListener("touchmove", handleTouchMove);
+    //   bottomSlider.addEventListener("touchend", handleTouchEnd);
+    // }
+
+    const timer = setTimeout(() => {
+      setCurrentTopIndex((prev) => (prev + 1) % topPlans.length);
+    }, 3000);
 
     return () => {
       if (topSlider) {
@@ -100,13 +105,14 @@ const Plans = () => {
         topSlider.removeEventListener("touchmove", handleTouchMove);
         topSlider.removeEventListener("touchend", handleTouchEnd);
       }
-      if (bottomSlider) {
-        bottomSlider.removeEventListener("touchstart", handleTouchStart);
-        bottomSlider.removeEventListener("touchmove", handleTouchMove);
-        bottomSlider.removeEventListener("touchend", handleTouchEnd);
-      }
+      clearTimeout(timer);
+      // if (bottomSlider) {
+      //   bottomSlider.removeEventListener("touchstart", handleTouchStart);
+      //   bottomSlider.removeEventListener("touchmove", handleTouchMove);
+      //   bottomSlider.removeEventListener("touchend", handleTouchEnd);
+      // }
     };
-  }, [currentTopIndex, currentBottomIndex]);
+  }, [currentTopIndex]);
 
   const handleTopPrev = () => {
     setCurrentTopIndex((prevIndex) =>
@@ -122,25 +128,25 @@ const Plans = () => {
     console.log(currentTopIndex);
   };
 
-  const handleBottomPrev = () => {
-    setCurrentBottomIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : prevIndex
-    );
-  };
+  // const handleBottomPrev = () => {
+  //   setCurrentBottomIndex((prevIndex) =>
+  //     prevIndex > 0 ? prevIndex - 1 : prevIndex
+  //   );
+  // };
 
-  const handleBottomNext = () => {
-    setCurrentBottomIndex((prevIndex) =>
-      prevIndex < bottomPlans.length - 1 ? prevIndex + 1 : prevIndex
-    );
-  };
+  // const handleBottomNext = () => {
+  //   setCurrentBottomIndex((prevIndex) =>
+  //     prevIndex < bottomPlans.length - 1 ? prevIndex + 1 : prevIndex
+  //   );
+  // };
 
   return (
     <div className="plansWrap">
       <div className="onlineSessions">
         <h2>ONLINE GUIDE</h2>
       </div>
-      <div className="bottomPlansWrap" ref={bottomSliderRef}>
-        {isSmallScreen ? (
+      <div className="bottomPlansWrap">
+        {/* {isSmallScreen ? (
           <div className="sliderContainer">
             <div className="bottomplanSlider">
               <div className="bottomPlan">
@@ -202,7 +208,29 @@ const Plans = () => {
               </div>
             ))}
           </div>
-        )}
+        )} */}
+        {/* <div className="plansContainer"> */}
+        {bottomPlans.map((item, index) => (
+          <div className="bottomPlan" key={index}>
+            <div className="bottomPlanName">
+              <p>{item.name}</p>
+            </div>
+            <div className="bottomPlanFoot">
+              <span className="bottomPlanDescButton">
+                <div className="bottomPlanDesc">
+                  <p>{item.desc}</p>
+                </div>
+                <div className="bottomPlanButton">
+                  <button>Check</button>
+                </div>
+              </span>
+              <span className="bottomPlanImg">
+                <img src={item.img} />
+              </span>
+            </div>
+          </div>
+        ))}
+        {/* </div> */}
       </div>
       <div className="superPlans">
         <h2>SUPER PLANS</h2>
