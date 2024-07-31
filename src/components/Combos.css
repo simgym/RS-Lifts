@@ -1,0 +1,323 @@
+.plansWrap {
+  padding: 3% 3%;
+
+  /* border: 1px solid black; */
+}
+.plansContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 0% 1%;
+}
+.comboWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 0% 1%;
+}
+.superPlans {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.comboPlan {
+  /* border: 2px solid #4882ee; */
+  /* background: radial-gradient(
+    circle at 125% 125%,
+    #4882ee,
+    rgba(49, 210, 232, 1),
+    #31d2e8
+  ); */
+  /* background: linear-gradient(
+    89.5deg,
+    rgb(104, 208, 232) 1.5%,
+    rgb(231, 144, 245) 100.5%
+  ); */
+  background: linear-gradient(
+    88.8deg,
+    rgb(239, 171, 245) 13.4%,
+    rgb(196, 181, 249) 76.3%
+  );
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.topPlanHead {
+  display: flex;
+  flex-direction: column;
+}
+
+.comboName {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0%;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 4%;
+}
+.comboName p {
+  /* border: 1px solid black; */
+  /* background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1% 3%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+  color: white;
+}
+/* .shreadPlan .topPlanName p {
+    color: white;
+    text-align: center;
+  } */
+
+.comboServicesImg {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.comboServices {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 5%;
+  padding: 0% 2%;
+  /* border: 1px solid red; */
+}
+
+.comboServices p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.785);
+
+  color: white;
+  padding: 10px 18px 10px 10px;
+  /* 
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%); */
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* .otherPlan .topPlanServices p {
+    background: radial-gradient(
+      circle at 125% 125%,
+      #31d2e8,
+      rgba(49, 210, 232, 1),
+      #4882ee
+    );
+    color: rgba(0, 0, 0, 0.785);
+    padding: 10px 18px 10px 10px;
+  } */
+/* .beginningPlan .topPlanDesc p {
+    color: white;
+  } */
+.comboImg {
+  flex: 1.5;
+}
+
+.comboImg img {
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.554); */
+}
+
+.comboFoot {
+  display: flex;
+  /* border: 1px solid red; */
+  padding: 2% 0%;
+}
+
+.comboDesc {
+  /* border: 1px solid green; */
+  text-align: left;
+  flex: 2;
+}
+.comboDesc p {
+  /* border: 1px solid blue; */
+  padding: 10px 18px 10px 10px;
+  font-weight: 800;
+  /* font-size: 1.2rem; */
+}
+/* .shreadPlan .topPlanDesc p {
+    color: white;
+  } */
+.comboButton {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.comboButton button {
+  /* background: radial-gradient(
+    circle at 125% 125%,
+    #31d2e8,
+    rgba(49, 210, 232, 1),
+    #4882ee
+  ); */
+  padding: 1rem 2rem;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  border: none;
+  color: black;
+  font-weight: 600;
+  /* border-radius: 9999px; */
+}
+.comboButton button {
+  background: rgba(0, 0, 0, 0.785);
+  color: white;
+  border-radius: 9999px;
+}
+@media (min-width: 769px) {
+  .plansWrap {
+    padding: 3% 0%;
+    /* border: 1px solid black; */
+  }
+  .comboWrap {
+    padding: 1% 1%;
+  }
+  .comboPlan {
+    width: 40%;
+  }
+  .superPlans {
+    font-size: 2.5rem;
+  }
+  /* .comboContainer {
+    display: flex;
+    border: 1px solid blue;
+  } */
+  .comboWrap {
+    flex-direction: row;
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    /* gap: 2%; */
+  }
+
+  /* .comboServices {
+    background: rgba(0, 0, 0, 0.785);
+  } */
+  .comboServices {
+    justify-content: flex-start;
+
+    padding: 0;
+  }
+  .comboServices p {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    border-radius: 0;
+  }
+  .comboServices span {
+    margin: 2% 0%;
+  }
+  /* .topPlanServices p {
+      font-size: 1rem;
+    }
+    .topPlanDesc {
+      font-size: 0.8rem;
+    } */
+  .comboDesc {
+    /* font-size: 1.3rem; */
+    font-weight: 500;
+    /* background-color: rgba(0, 0, 0, 0.785); */
+
+    /* color: white; */
+    padding: 10px 18px 10px 10px;
+    /* 
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%); */
+    text-align: left;
+    border-radius: 5px;
+  }
+  .comboFoot {
+    flex-direction: column;
+    /* gap: 10%; */
+    padding: 0% 5%;
+    /* border: 1px solid red; */
+  }
+  .comboButton {
+    /* padding-right: 2%; */
+    margin: 5% 0%;
+  }
+  .comboButton button {
+    width: 100%;
+    /* margin-bottom: 5%; */
+  }
+}
+
+@media (max-width: 768px) {
+  .superPlans {
+    margin-top: 3%;
+    font-size: 1.9rem;
+    margin-bottom: 3%;
+  }
+  .comboPlan {
+    margin-bottom: 5%;
+  }
+  .comboWrap {
+    flex-direction: column;
+    /* overflow-x: scroll; */
+  }
+
+  .comboName {
+    font-size: 1.8rem;
+  }
+
+  .comboServices p,
+  span {
+    font-size: 1.6rem;
+  }
+  .comboDesc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .superPlans {
+    font-size: 1.4rem;
+  }
+  .comboPlan {
+    padding-bottom: 2%;
+  }
+  .comboWrap {
+    gap: 5%;
+    padding: 0% 2%;
+  }
+
+  .comboHead {
+    text-align: center;
+  }
+
+  .comboName {
+    font-size: 1.5rem;
+  }
+
+  .comboServices p {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .comboImg {
+    flex: 1;
+  }
+  .comboFoot {
+    flex-direction: column;
+  }
+  .comboDesc {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .comboButton button {
+    width: 80%;
+  }
+}

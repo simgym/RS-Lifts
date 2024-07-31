@@ -6,14 +6,24 @@ import Discount from "./components/Discount";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import CoachSection from "./components/CoachSection";
+import Combos from "./components/Combos";
 import "./App.css";
 
 function App() {
   const [showDiscount, setShowDiscount] = useState(false);
+
   useEffect(() => {
-    setTimeout(() => {
+    const initialTimeout = setTimeout(() => {
       setShowDiscount(true);
     }, 3000);
+    const interval = setInterval(() => {
+      setShowDiscount(true);
+    }, 60000);
+
+    return () => {
+      clearTimeout(initialTimeout);
+      clearInterval(interval);
+    };
   }, []);
   return (
     <>
@@ -26,6 +36,7 @@ function App() {
         <LandingSection />
         <NinetyTransformation />
         <Plans />
+        <Combos />
         <CoachSection />
         <Footer />
       </div>

@@ -31,21 +31,7 @@
   /* padding-top: 3%; */
   /* padding-bottom: 5%; */
 }
-.tfSecDiscount {
-  /* border: 1px solid white; */
-  /* transform: rotate(270deg); */
-  /* border-top: 1px solid #94949444; */
-  width: 100%;
-  padding-left: 5%;
-  /* text-align: left; */
-  background-color: rgb(255, 255, 255);
-  /* font-style: italic; */
-}
-/* .tfSecDiscountBig {
-  border: 1px solid white;
-  transform: rotate(270deg);
-  width: 100%;
-} */
+
 .tfSecHead {
   /* border: 1px solid orange; */
   text-align: left;
@@ -117,10 +103,6 @@
   }
   .tfSectionImg img {
     flex: 2;
-  }
-  .tfSecDiscountBig {
-    background-color: white;
-    /* border: 1px solid red; */
   }
 }
 @media (max-width: 768px) {

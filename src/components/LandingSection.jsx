@@ -1,6 +1,6 @@
 import landingImg from "../assets/first.jpg";
 import Navbar from "./Navbar";
-import PermanentDiscount from "./PermanentDiscount";
+
 import "./LandingSection.css";
 
 const LandingSection = () => {
@@ -8,7 +8,6 @@ const LandingSection = () => {
     <div className="landpageWrapper">
       <div className="landNavWrapper">
         <Navbar />
-        {/* <PermanentDiscount /> */}
       </div>
 
       <div className="lsWrapper">
