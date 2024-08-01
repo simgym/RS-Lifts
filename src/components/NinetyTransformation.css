@@ -60,7 +60,7 @@
   padding-left: 5%;
 }
 
-.tfSecButton button {
+.tfSecButton a {
   /* background-color: #6617cb;
   background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
    */
@@ -76,7 +76,7 @@
   color: rgb(255, 255, 255);
 }
 
-.tfSecButton button:hover {
+.tfSecButton a:hover {
   background-color: #efefef;
   color: black;
   /* border: 1px solid rgb(0, 0, 0); */
@@ -119,10 +119,10 @@
   }
 
   .tfSecQuote {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
-  .tfSecButton button {
+  .tfSecButton a {
     /* width: 80%; */
     font-size: 0.5rem;
     padding: 0.6rem 1.5rem;

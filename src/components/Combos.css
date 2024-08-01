@@ -157,7 +157,7 @@
   justify-content: center;
   flex: 1;
 }
-.comboButton button {
+.comboButton a {
   /* background: radial-gradient(
     circle at 125% 125%,
     #31d2e8,
@@ -170,13 +170,12 @@
   border: none;
   color: black;
   font-weight: 600;
-  /* border-radius: 9999px; */
-}
-.comboButton button {
   background: rgba(0, 0, 0, 0.785);
   color: white;
   border-radius: 9999px;
+  text-decoration: none;
 }
+
 @media (min-width: 769px) {
   .plansWrap {
     padding: 3% 0%;
@@ -249,7 +248,7 @@
     /* padding-right: 2%; */
     margin: 5% 0%;
   }
-  .comboButton button {
+  .comboButton a {
     width: 100%;
     /* margin-bottom: 5%; */
   }
@@ -317,7 +316,7 @@
     text-align: center;
     font-size: 0.8rem;
   }
-  .comboButton button {
+  .comboButton a {
     width: 80%;
   }
 }

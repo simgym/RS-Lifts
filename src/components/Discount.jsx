@@ -23,8 +23,8 @@ const Discount = ({ setShowDiscount }) => {
         </div>
       </div>
       <div className="dsButton">
-        <button onClick={() => setShowDiscount(false)}>Close</button>
-        <button>Check Now</button>
+        <a onClick={() => setShowDiscount(false)}>Close</a>
+        <a>Check Now</a>
       </div>
     </div>
   );

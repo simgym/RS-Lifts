@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import beforeImage from "../assets/6O9A2315.jpg";
 import consultImg from "../assets/consult.jpg";
 import { FaCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Plans.css";
 
 const Plans = () => {
@@ -11,6 +12,7 @@ const Plans = () => {
       services: ["Build Foundation", "Master Basics", "Start Strong"],
       img: beforeImage,
       desc: "8-week STRONG FOUNDATION plan to kickstart your fitness journey",
+      url: "/home/plan/superplans/superbeginning",
     },
     {
       name: "SHRED",
@@ -21,12 +23,14 @@ const Plans = () => {
       ],
       img: beforeImage,
       desc: "12-week PROGRESSIVELY INTENSE program to shred fat and get lean",
+      url: "/home/plan/superplans/supershred",
     },
     {
       name: "BULK",
       services: ["Build Muscles", "Build Strength", "Elevate Performance"],
       img: beforeImage,
       desc: "12-week ESCALATING INTENSITY plan to build muscle and gain strength",
+      url: "/home/plan/superplans/superbulk",
     },
   ];
 
@@ -35,11 +39,13 @@ const Plans = () => {
       name: "VIDEO/VOICE CONSULTATION",
       desc: "30 Minutes Video Consultation with Rohit",
       img: consultImg,
+      url: "/home/plan/videoconsultation",
     },
     {
       name: "ONE TO ONE PERSONAL TRAINING",
       desc: "Online Live Transformation Video on Video Call",
       img: consultImg,
+      url: "/home/plan/onlinept",
     },
   ];
 
@@ -129,7 +135,9 @@ const Plans = () => {
                   <p>{item.desc}</p>
                 </div>
                 <div className="bottomPlanButton">
-                  <button>Check</button>
+                  <Link to={item.url} target="_blank">
+                    Check
+                  </Link>
                 </div>
               </span>
               <span className="bottomPlanImg">
@@ -177,7 +185,9 @@ const Plans = () => {
                     <p>{topPlans[currentTopIndex].desc}</p>
                   </div>
                   <div className="topPlanButton">
-                    <button>Check</button>
+                    <Link to={topPlans[currentTopIndex].url} target="_blank">
+                      Check
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -229,7 +239,9 @@ const Plans = () => {
                     <p>{item.desc}</p>
                   </div>
                   <div className="topPlanButton">
-                    <button>Check</button>
+                    <Link to={item.url} target="_blank">
+                      Check
+                    </Link>
                   </div>
                 </div>
               </div>

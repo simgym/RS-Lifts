@@ -7,8 +7,8 @@ const NinetyTransformation = () => {
       <div className="tfSectionCont">
         <span className="tfSecHead">
           <h2>
-            <span style={{ color: "rgba(0, 0, 0, 0.785)" }}>90 DAYS</span> BODY
-            TRANSFORMATION PROGRAM
+            <span style={{ color: "rgba(0, 0, 0, 0.785)" }}>90 DAYS</span>{" "}
+            ONLINE BODY TRANSFORMATION PROGRAM
           </h2>
         </span>
         <span className="tfSecQuote">
@@ -23,7 +23,7 @@ const NinetyTransformation = () => {
           </p>
         </span>
         <span className="tfSecButton">
-          <button>Check Now</button>
+          <a>Check Now</a>
         </span>
       </div>
 

@@ -6,9 +6,9 @@ import "./LandingSection.css";
 const LandingSection = () => {
   return (
     <div className="landpageWrapper">
-      <div className="landNavWrapper">
+      {/* <div className="landNavWrapper">
         <Navbar />
-      </div>
+      </div> */}
 
       <div className="lsWrapper">
         <div className="lsCont">
