@@ -14,7 +14,7 @@ const Combos = () => {
       url: "/home/plan/combo/beginning+shred",
     },
     {
-      services: ["SUPER BEGINNING", "SUPER BULK "],
+      services: ["SUPER BEGINNING", "SUPER BULK"],
       img: beforeImage,
       desc: "20-week PROGRESSIVELY INTENSE program to kickstart your journey, build muscle, and gain strength",
       url: "/home/plan/combo/beginning+bulk",
@@ -98,49 +98,53 @@ const Combos = () => {
             <div className="comboPlan" key={index}>
               <div className="comboHead">
                 <div className="comboServicesImg">
-                  <div className="comboServices">
-                    <p>
-                      {topPlans[0].services[0]}
-                      <span>
-                        <IoMdAdd />
-                      </span>
-                      {topPlans[1].services[1]}
-                    </p>
-
-                    <div className="comboDesc">
-                      <span>{item.desc}</span>
-                    </div>
-                  </div>
                   <div className="comboImg">
                     <img src={item.img} />
+                    <div className="overlay">
+                      <p>{item.services[0]}</p>
+                    </div>
+                  </div>
+                  {/* <span>
+                    <IoMdAdd />
+                  </span> */}
+                  <div className="comboImg">
+                    <img src={item.img} />
+                    <div className="overlay">
+                      <p>{item.services[1]}</p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="comboFoot">
+                <div className="comboDesc">
+                  <span>{item.desc}</span>
+                </div>
                 <div className="comboButton">
                   <Link to={item.url}>Check</Link>
-                </div>{" "}
+                </div>
               </div>
             </div>
           ))}
         {isSmallScreen && (
-          <div className="sliderContainer">
+          <div className="sliderContainer" ref={sliderRef}>
             <div className="topPlanSlider">
               <div className="comboPlan">
                 <div className="comboHead">
-                  {/* <div className="comboName">
-                    <p>SUPER {topPlans[currentIndex].name}</p>
-                  </div> */}
                   <div className="comboServicesImg">
-                    <div className="comboServices">
-                      <p>{topPlans[0].services[0]}</p>
-                      <span>
-                        <IoMdAdd />
-                      </span>
-                      <p>{topPlans[0].services[1]}</p>
-                    </div>
                     <div className="comboImg">
                       <img src={topPlans[currentIndex].img} />
+                      <div className="overlay">
+                        <p>{topPlans[currentIndex].services[0]}</p>
+                      </div>
+                    </div>
+                    {/* <span>
+                      <IoMdAdd />
+                    </span> */}
+                    <div className="comboImg">
+                      <img src={topPlans[currentIndex].img} />
+                      <div className="overlay">
+                        <p>{topPlans[currentIndex].services[1]}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -155,10 +159,10 @@ const Combos = () => {
               </div>
             </div>
             <div className="planInd">
-              <span className={currentIndex == 0 ? "" : "normInd"}>
+              <span className={currentIndex === 0 ? "" : "normInd"}>
                 <FaCircle />
               </span>
-              <span className={currentIndex == 1 ? "" : "normInd"}>
+              <span className={currentIndex === 1 ? "" : "normInd"}>
                 <FaCircle />
               </span>
             </div>
