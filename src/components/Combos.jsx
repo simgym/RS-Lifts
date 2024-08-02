@@ -118,9 +118,7 @@ const Combos = () => {
               </div>
               <div className="comboFoot">
                 <div className="comboButton">
-                  <Link to={item.url} target="_blank">
-                    Check
-                  </Link>
+                  <Link to={item.url}>Check</Link>
                 </div>{" "}
               </div>
             </div>
@@ -151,9 +149,7 @@ const Combos = () => {
                     <p>{topPlans[currentIndex].desc}</p>
                   </div>
                   <div className="comboButton">
-                    <Link to={topPlans[currentIndex].url} target="_blank">
-                      Check
-                    </Link>
+                    <Link to={topPlans[currentIndex].url}>Check</Link>
                   </div>
                 </div>
               </div>

@@ -135,9 +135,7 @@ const Plans = () => {
                   <p>{item.desc}</p>
                 </div>
                 <div className="bottomPlanButton">
-                  <Link to={item.url} target="_blank">
-                    Check
-                  </Link>
+                  <Link to={item.url}>Check</Link>
                 </div>
               </span>
               <span className="bottomPlanImg">
@@ -185,9 +183,7 @@ const Plans = () => {
                     <p>{topPlans[currentTopIndex].desc}</p>
                   </div>
                   <div className="topPlanButton">
-                    <Link to={topPlans[currentTopIndex].url} target="_blank">
-                      Check
-                    </Link>
+                    <Link to={topPlans[currentTopIndex].url}>Check</Link>
                   </div>
                 </div>
               </div>
@@ -239,9 +235,7 @@ const Plans = () => {
                     <p>{item.desc}</p>
                   </div>
                   <div className="topPlanButton">
-                    <Link to={item.url} target="_blank">
-                      Check
-                    </Link>
+                    <Link to={item.url}>Check</Link>
                   </div>
                 </div>
               </div>

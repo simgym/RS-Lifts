@@ -59,9 +59,7 @@ const CoachSection = () => {
               </a>
             </div>
             <div className="coach-learn-more">
-              <a className="coach-learn-more-btn" href="/home/aboutus">
-                Learn More
-              </a>
+              <a className="coach-learn-more-btn">Learn More</a>
             </div>
           </div>
         </div>
