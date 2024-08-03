@@ -1,14 +1,21 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import "./SuperPlanDetails.css";
 
 const SuperPlanDetails = ({ details }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleDescription = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
     <div className="sdWrap">
-      {/* <h1>{details.title}</h1> */}
       <div className="sdHead">
-        {/* <div className="rand"> */}
         <div className="sdImg">
-          <img src={details.poster} />
+          <img src={details.poster} alt={details.title} />
         </div>
         <div className="sdBrief">
           <div className="sdTitle">
@@ -25,7 +32,7 @@ const SuperPlanDetails = ({ details }) => {
             <span className="sdDiscountPrice">₹{details.price}</span>
           </div>
           <div className="sdBuyButton">
-            <Link>Buy Now</Link>
+            <Link to="#">Buy Now</Link>
           </div>
           <div className="sdIncludes">
             <div className="sdIncludesHead">What's Included?</div>
@@ -34,28 +41,41 @@ const SuperPlanDetails = ({ details }) => {
                 <li key={index}>{service.name}</li>
               ))}
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>
       <div className="sdFoot">
-        <div className="rand">
+        <div className="sdSecWrap">
           {details.desc && (
             <div className="sdDesc">
               <p>{details.desc}</p>
             </div>
           )}
-
           <div className="sdServices">
             <div className="sdServciseHead">
               <p>This plan includes :</p>
             </div>
             <div className="sdServiceDesc">
-              {" "}
               {details.services.map((service, index) => (
                 <div key={index} className="sdService">
-                  <p className="sdServiceName">{service.name} :</p>
-                  <p className="sdServiceInfo">{service.include}</p>
+                  <div
+                    className="sdServiceHeader"
+                    onClick={() => toggleDescription(index)}
+                  >
+                    <p className="sdServiceName">{service.name}</p>
+                    <span className="sdServiceArrow">
+                      {activeIndex === index ? (
+                        <IoIosArrowUp />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
+                    </span>
+                  </div>
+                  {activeIndex === index && (
+                    <div className="sdServiceInfo">
+                      <p>{service.include}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

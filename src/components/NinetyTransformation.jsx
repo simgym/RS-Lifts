@@ -1,9 +1,13 @@
 import TransformationSlider from "./TransformationSlider";
+import { Link } from "react-router-dom";
 import "./NinetyTransformation.css";
 
 const NinetyTransformation = () => {
   return (
     <div className="tfSectionWrapper">
+      <div className="tfDisc">
+        <p>60% OFF</p>
+      </div>
       <div className="tfSectionCont">
         <span className="tfSecHead">
           <h2>
@@ -22,8 +26,11 @@ const NinetyTransformation = () => {
             today and unlock your full potential!
           </p>
         </span>
+
         <span className="tfSecButton">
-          <a>Check Now</a>
+          <Link to="/home/plan/90+day+online+transformation+program">
+            Check Now
+          </Link>
         </span>
       </div>
 

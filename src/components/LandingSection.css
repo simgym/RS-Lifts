@@ -104,7 +104,7 @@
   text-align: left;
   margin-top: 5%;
   margin-bottom: 10%;
-  font-size: 5rem;
+  font-size: 4.5rem;
   width: 100%;
 }
 
@@ -123,6 +123,7 @@
   font-family: "Bungee Outline", sans-serif;
   font-style: normal;
   color: #318ce7;
+  font-size: 5rem;
 }
 
 @media (max-width: 1024px) {
@@ -160,7 +161,7 @@
     min-width: 100%;
   }
   .lsQuote {
-    font-size: 3rem;
+    font-size: 2.5rem;
     /* margin-top: 10%;
     margin-bottom: 15%; */
     width: 80%;
@@ -193,7 +194,7 @@
 
 @media (max-width: 480px) {
   .lsQuote {
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* margin-top: 15%;
     margin-bottom: 20%; */
   }

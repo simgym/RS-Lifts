@@ -104,9 +104,9 @@ const Combos = () => {
                       <p>{item.services[0]}</p>
                     </div>
                   </div>
-                  {/* <span>
+                  <span>
                     <IoMdAdd />
-                  </span> */}
+                  </span>
                   <div className="comboImg">
                     <img src={item.img} />
                     <div className="overlay">
@@ -137,9 +137,9 @@ const Combos = () => {
                         <p>{topPlans[currentIndex].services[0]}</p>
                       </div>
                     </div>
-                    {/* <span>
+                    <span>
                       <IoMdAdd />
-                    </span> */}
+                    </span>
                     <div className="comboImg">
                       <img src={topPlans[currentIndex].img} />
                       <div className="overlay">

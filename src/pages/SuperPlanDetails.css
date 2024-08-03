@@ -1,41 +1,45 @@
 .sdWrap {
   margin-top: 100px;
-  /* border: 1px solid red; */
 }
+
 .sdHead {
   display: flex;
   gap: 5%;
 }
+
 .sdImg {
   flex: 1;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .sdImg img {
   width: 50%;
   height: auto;
 }
+
 .sdTitle {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
+
 .sdTarget {
   color: grey;
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 }
+
 .sdBrief {
   flex: 1;
-  /* border: 1px solid blue; */
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 2%;
 }
+
 .sdPrice {
   display: flex;
   align-items: center;
@@ -43,26 +47,21 @@
   font-size: 1.1rem;
   font-weight: 500;
 }
+
 .sdMrp {
   text-decoration: line-through;
   color: grey;
 }
+
 .sdBuyButton {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
   margin: 1% 0%;
 }
+
 .sdBuyButton a {
   text-decoration: none;
-  /* border: 1px solid rgb(33, 162, 108); */
   padding: 0.8rem 1.6rem;
-  /* background: radial-gradient(
-    circle at 125% 125%,
-    #31d2e8,
-    rgba(49, 210, 232, 1),
-    #4882ee
-  ); */
   background-color: rgba(0, 0, 0, 0.785);
   color: white;
   border-radius: 9999px;
@@ -70,60 +69,92 @@
   font-weight: 600;
 }
 
-/* .sdIncludes {
-  border: 1px solid rgb(255, 149, 0);
-} */
 .sdIncludesHead {
-  /* border: 1px solid green; */
   margin-bottom: 1rem;
   font-weight: 500;
   font-size: 1.1rem;
 }
+
 .sdIncludedList {
-  /* border: 1px solid purple; */
   padding-left: 5%;
   list-style: circle;
   line-height: 1.5;
 }
+
 .sdFoot {
-  /* padding: 2% 2% 0% 2%; */
-  /* border: 1px solid orange; */
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2%;
+  /* border: 1px solid black; */
 }
-.rand {
+
+.sdSecWrap {
   width: 77%;
 }
 
 .sdDesc {
   font-weight: 500;
   font-size: 1.1rem;
-}
-.sdServices {
-  /* border: 1px solid red; */
-  margin-top: 1%;
-}
-.sdServciseHead {
   /* border: 1px solid blue; */
+}
+
+.sdServices {
+  margin-top: 1%;
+  /* border: 1px solid red; */
+}
+
+.sdServciseHead {
   font-weight: 500;
   font-size: 1.2rem;
   margin-bottom: 2%;
 }
+
+.sdService {
+  margin-bottom: 1rem;
+}
+
+.sdServiceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  background-color: rgba(200, 200, 200, 0.515);
+  border-radius: 999px;
+  padding: 1rem;
+}
+
 .sdServiceName {
   font-weight: 500;
   color: #4882ee;
 }
+
+.sdServiceArrow {
+  font-size: 1.2rem;
+}
+
 .sdServiceInfo {
   line-height: 1.5;
-  /* border: 1px solid rgb(191, 191, 191); */
   padding: 3%;
   border-radius: 1rem;
-  background-color: rgba(200, 200, 200, 0.515);
-  margin: 1% 0%;
+  /* background-color: rgba(200, 200, 200, 0.515); */
+  margin-top: 1%;
+  animation: slideDown 0.3s ease-in-out;
 }
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+
 @media (max-width: 768px) {
   .sdHead {
     flex-direction: column;
@@ -134,17 +165,21 @@
   .sdIncludes {
     display: none;
   }
+
   .sdTarget {
     font-size: 1rem;
     margin-top: 2%;
   }
+
   .sdPrice {
     gap: 2%;
   }
+
   .sdBrief {
     width: 77%;
     margin-top: 5%;
   }
+
   .sdPrice {
     margin: 5% 0%;
   }
@@ -154,10 +189,15 @@
     display: flex;
     justify-content: center;
   }
+
   .sdServciseHead {
     margin-top: 8%;
     margin-bottom: 4%;
   }
+  .sdServiceHeader {
+    font-size: 0.8rem;
+  }
+
   .sdServiceInfo {
     margin: 4% 0%;
   }

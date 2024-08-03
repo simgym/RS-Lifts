@@ -165,7 +165,7 @@ function App() {
       title: "Online Personal Training",
       mrp: 2000,
       price: 1000,
-      desc: "Take your fitness journey to the next level with our personalized 30-minute video consultation. This service is designed for those who need expert advice on their current training and nutrition plans.",
+      desc: "Experience the ultimate convenience and effectiveness of personalized one-to-one personal training sessions, all from the comfort of your home. Whether you have a home gym, a few pieces of equipment, or none at all, our live online PT sessions ensure you perform every exercise correctly and efficiently.",
       services: [
         {
           name: "Customized Workouts",
@@ -278,6 +278,56 @@ function App() {
         },
       ],
     },
+    {
+      poster: beforeImage,
+      title: "90-Day Online Body Transformation Program",
+      mrp: 3000,
+      price: 1500,
+      desc: "Achieving your fitness goals can be easier and more effective with the right guidance of a good coach. With our 90-day online transformation coaching program, you will receive expert support and personalized plans, no matter where you are—any city, state, or country, or wherever you do your workout—whether at home, in the gym, or at a park. Our approach ensures you stay motivated, make informed decisions, and always stay on track.",
+      services: [
+        {
+          name: "Customized Workout Plan",
+          include:
+            "A workout plan tailored just for you, accessible from anywhere.",
+        },
+        {
+          name: "Tailored Diet Plan",
+          include:
+            "A personalized diet plan designed to fit your lifestyle, eating preferences, and goals.",
+        },
+        {
+          name: "Exercise Demonstration Videos",
+          include:
+            "Exclusive access to videos showing you exactly how to perform each exercise, ensuring perfect form every time.",
+        },
+        {
+          name: "Initial Voice Call with Rohit Sharma",
+          include:
+            "A comprehensive voice call to discuss your goals and create a personalized action plan.",
+        },
+        {
+          name: "24/7 WhatsApp Support",
+          include:
+            "Continuous support and guidance available anytime you need it, right on your phone.",
+        },
+        //
+        {
+          name: "Exercise Form Correction",
+          include:
+            "Regular feedback on your exercise form through video submissions, helping you improve quickly and safely.",
+        },
+        {
+          name: "Daily/Weekly Meal & Progress Tracking",
+          include:
+            "Easy meal tracking through WhatsApp—just send your meals, and I'll make sure you're following the right diet with the right amount of calories.",
+        },
+        {
+          name: "Modifications in Workout and Diet Plan",
+          include:
+            "Adjustments to your plans after 45 days to keep your progress steady and effective.",
+        },
+      ],
+    },
   ];
 
   const router = createBrowserRouter([
@@ -322,6 +372,10 @@ function App() {
         {
           path: "/home/plan/combo/beginning+bulk",
           element: <SuperPlanDetails details={planDetails[6]} />,
+        },
+        {
+          path: "/home/plan/90+day+online+transformation+program",
+          element: <SuperPlanDetails details={planDetails[7]} />,
         },
       ],
     },
