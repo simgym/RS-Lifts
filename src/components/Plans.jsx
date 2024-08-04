@@ -120,9 +120,7 @@ const Plans = () => {
 
   return (
     <div className="plansWrap">
-      <div className="onlineSessions">
-        <h2>ONLINE GUIDE</h2>
-      </div>
+      <div className="onlineSessions">{/* <h2>ONLINE GUIDE</h2> */}</div>
       <div className="bottomPlansWrap">
         {bottomPlans.map((item, index) => (
           <div className="bottomPlan" key={index}>

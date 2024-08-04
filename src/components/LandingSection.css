@@ -63,6 +63,7 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .movingPill {
@@ -83,12 +84,21 @@
 }
 
 @keyframes movePill {
-  0%,
-  100% {
-    left: 0;
+  0% {
+    left: -100px;
+    opacity: 0;
   }
-  50% {
+  5% {
+    left: 0;
+    opacity: 1;
+  }
+  95% {
     left: calc(100% - 100px);
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
   }
 }
 
@@ -98,6 +108,9 @@
   color: black;
   font-size: 1.5rem;
   font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .lsQuote {

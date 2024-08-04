@@ -5,14 +5,13 @@ import "./NinetyTransformation.css";
 const NinetyTransformation = () => {
   return (
     <div className="tfSectionWrapper">
-      <div className="tfDisc">
+      {/* <div className="tfDisc">
         <p>60% OFF</p>
-      </div>
+      </div> */}
       <div className="tfSectionCont">
         <span className="tfSecHead">
           <h2>
-            <span style={{ color: "rgba(0, 0, 0, 0.785)" }}>90 DAYS</span>{" "}
-            ONLINE BODY TRANSFORMATION PROGRAM
+            <span>90 DAYS</span> ONLINE BODY TRANSFORMATION PROGRAM
           </h2>
         </span>
         <span className="tfSecQuote">

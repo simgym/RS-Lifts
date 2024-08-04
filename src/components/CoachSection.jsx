@@ -17,12 +17,12 @@ const CoachSection = () => {
           <h2>Meet Your Coach</h2>
         </div>
         <div className="coach-details">
-          <h1 className="coach-name">Rohit Sharma</h1>
+          {/* <h1 className="coach-name">Rohit Sharma</h1> */}
           <div className="coach-imgDesc">
             <div className="coach-image-container">
               <img src={coachImg} className="coach-image" alt="Coach" />
             </div>
-            <p className="coach-description">
+            <div className="coach-description">
               Rohit Sharma is a certified fitness Trainer & Certified Crossfit
               trainer With 18+ years of Coaching Experience & has trained over
               25,000 Clients offline and online in fitness industry. He also
@@ -31,7 +31,7 @@ const CoachSection = () => {
               Bodybuilding, Mr. YMCA 3rd in 2013, Bodypowet India Men’s Physique
               (Top 5 Overall India) in 2015, Mr India Jera Classic Phya, Top 3,
               Overall India in 2017.
-            </p>
+            </div>
           </div>
           <div className="coach-learn-Social">
             {" "}

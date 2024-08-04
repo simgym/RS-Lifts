@@ -14,6 +14,7 @@ import Homepage from "./pages/Homepage";
 import SuperPlanDetails from "./pages/SuperPlanDetails";
 import consultImg from "./assets/consult.jpg";
 import beforeImage from "./assets/6O9A2315.jpg";
+import firstImg from "./assets/first.jpg";
 import "./App.css";
 
 function App() {
@@ -398,17 +399,6 @@ function App() {
   return (
     <>
       <div className="appWrapper">
-        {/* {showDiscount && (
-          <div className="dsBackdrop">
-            <Discount setShowDiscount={setShowDiscount} />
-          </div>
-        )}
-        <LandingSection />
-        <NinetyTransformation />
-        <Plans />
-        <Combos />
-        <CoachSection />
-        <Footer /> */}
         <RouterProvider router={router} />
       </div>
     </>

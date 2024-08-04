@@ -83,6 +83,7 @@
 .comboDesc {
   text-align: left;
   flex: 2;
+  font-weight: 800;
 }
 
 .comboDesc p {
@@ -128,15 +129,14 @@
     justify-content: space-evenly;
   }
   .comboFoot {
-    flex-direction: column;
     padding: 5% 5%;
   }
   .comboButton {
     /* border: 1px solid red; */
-    padding: 2% 0% 0%;
+    padding: 0% 2% 0% 1%;
   }
   .comboButton a {
-    width: 50%;
+    width: 100%;
   }
   .comboServicesImg span {
     font-size: 2.5rem;
@@ -161,6 +161,14 @@
     padding: 0% 2%;
   }
   .comboButton a {
-    width: 100%;
+    width: 90%;
+  }
+  .comboDesc p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 426px) {
+  .comboFoot {
+    flex-direction: column;
   }
 }

@@ -384,6 +384,13 @@
   .topPlanServices p {
     font-size: 1rem;
   }
+  .topPlanButton {
+    /* border: 1px solid white; */
+    padding: 0% 2% 0% 1%;
+  }
+  .topPlanButton a {
+    width: 100%;
+  }
 
   .bottomPlan {
     margin-bottom: 5%;
@@ -468,7 +475,7 @@
     font-size: 0.8rem;
   }
   .topPlanButton a {
-    width: 80%;
+    width: 90%;
   }
   .bottomPlanDesc {
     font-size: 1rem;

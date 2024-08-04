@@ -12,13 +12,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  /* border: 1px solid red; */
 }
 
 .sdImg img {
   width: 50%;
   height: auto;
 }
+/* .sdImg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  max-width: 300px; 
+  max-height: 300px; 
+  overflow: hidden; 
+}
+
+.sdImg img {
+  width: 100%; 
+  height: auto;
+  object-fit: cover; 
+  max-width: 100%;
+  max-height: 100%; 
+} */
 
 .sdTitle {
   font-family: "Roboto", sans-serif;
@@ -97,6 +117,7 @@
 .sdDesc {
   font-weight: 500;
   font-size: 1.1rem;
+  margin: 2% 0%;
   /* border: 1px solid blue; */
 }
 
@@ -161,6 +182,9 @@
     align-items: center;
     width: 100%;
   }
+  .sdImg {
+    align-items: center;
+  }
 
   .sdIncludes {
     display: none;
@@ -183,7 +207,9 @@
   .sdPrice {
     margin: 5% 0%;
   }
-
+  .sdBuyButton {
+    margin: 2% 0%;
+  }
   .sdBuyButton a {
     width: 100%;
     display: flex;
