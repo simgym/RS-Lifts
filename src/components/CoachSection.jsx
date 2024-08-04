@@ -23,14 +23,17 @@ const CoachSection = () => {
               <img src={coachImg} className="coach-image" alt="Coach" />
             </div>
             <div className="coach-description">
-              Rohit Sharma is a certified fitness Trainer & Certified Crossfit
-              trainer With 18+ years of Coaching Experience & has trained over
-              25,000 Clients offline and online in fitness industry. He also
-              many titles in bodybuilding and men’s physique fitness model
-              categories, which mainly including Mr. Delhi 1st Place
-              Bodybuilding, Mr. YMCA 3rd in 2013, Bodypowet India Men’s Physique
-              (Top 5 Overall India) in 2015, Mr India Jera Classic Phya, Top 3,
-              Overall India in 2017.
+              <p>
+                <span> Rohit Sharma</span> is a certified fitness Trainer &
+                Certified Crossfit trainer With <span>18+ years</span> of
+                Coaching Experience & has trained over{" "}
+                <span>25,000 Clients</span> offline and online in fitness
+                industry. He also many titles in bodybuilding and men’s physique
+                fitness model categories, which mainly including Mr. Delhi 1st
+                Place Bodybuilding, Mr. YMCA 3rd in 2013, Bodypowet India Men’s
+                Physique (Top 5 Overall India) in 2015, Mr India Jera Classic
+                Phya, Top 3, Overall India in 2017.
+              </p>
             </div>
           </div>
           <div className="coach-learn-Social">

@@ -1,6 +1,6 @@
 .tfSectionWrapper {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   justify-content: center;
   /* border: 1px solid red; */
   width: 100%;

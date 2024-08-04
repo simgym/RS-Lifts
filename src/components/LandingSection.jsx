@@ -1,5 +1,4 @@
 import landingImg from "../assets/first.jpg";
-
 import "./LandingSection.css";
 
 const LandingSection = () => {
@@ -8,11 +7,9 @@ const LandingSection = () => {
       <div className="lsWrapper">
         <div className="lsCont">
           <div className="dat">
-            <div className="movingPill"></div>
-            <p>
-              <span>DETERMINATION</span>.<span>ACTION</span>.
-              <span>TRANSFORMATION</span>
-            </p>
+            <p className="word">DETERMINATION</p>
+            <p className="word">ACTION</p>
+            <p className="word">TRANSFORMATION</p>
           </div>
           <div className="lsQuote">
             <p>

@@ -11,7 +11,7 @@ const NinetyTransformation = () => {
       <div className="tfSectionCont">
         <span className="tfSecHead">
           <h2>
-            <span>90 DAYS</span> ONLINE BODY TRANSFORMATION PROGRAM
+            <span>90 DAYS</span> ONLINE TRANSFORMATION PROGRAM
           </h2>
         </span>
         <span className="tfSecQuote">
