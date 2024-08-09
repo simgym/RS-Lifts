@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import beforeImage from "../assets/6O9A2315.jpg";
-import afterImage from "../assets/landingSectionImg.jpg";
+import beforeImage from "../assets/beforeTransformation.jpeg";
+import afterImage from "../assets/afterTransformation.jpeg";
 
 import "./TransformationSlider.css";
 

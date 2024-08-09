@@ -5,6 +5,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import "./SuperPlanDetails.css";
 
 const SuperPlanDetails = ({ details }) => {
+  const mediaList = [{}];
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleDescription = (index) => {

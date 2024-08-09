@@ -19,11 +19,10 @@
 
 .coach-title {
   color: black;
-  font-size: 2.5rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  /* border: 1px solid white; */
+  font-family: "Whisper", cursive;
+  font-weight: 400;
   font-style: normal;
+  font-size: 2.5rem;
 }
 
 /* .coach-content {
@@ -138,7 +137,7 @@
     font-size: 0.8rem;
     flex: 1;
     display: flex;
-    align-items: center;
+    /* align-items: flex-start; */
   }
 
   .coach-learn-more-btn {

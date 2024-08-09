@@ -5,7 +5,7 @@ import Combos from "../components/Combos";
 import CoachSection from "../components/CoachSection";
 import Footer from "../components/Footer";
 import Discount from "../components/Discount";
-import { useState } from "react";
+import Testimonials from "../components/Testimonials";
 import "./Homepage.css";
 
 const Homepage = ({ setShowDiscount, showDiscount }) => {
@@ -23,6 +23,7 @@ const Homepage = ({ setShowDiscount, showDiscount }) => {
       <Plans />
       <Combos />
       <CoachSection />
+      <Testimonials />
       <Footer />
     </div>
   );

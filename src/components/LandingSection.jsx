@@ -1,15 +1,20 @@
 import landingImg from "../assets/first.jpg";
+import Navbar from "./Navbar";
+
 import "./LandingSection.css";
 
 const LandingSection = () => {
   return (
     <div className="landpageWrapper">
+      {/* <div className="landNavWrapper">
+        <Navbar />
+      </div> */}
+
       <div className="lsWrapper">
         <div className="lsCont">
           <div className="dat">
-            <p className="word">DETERMINATION</p>
-            <p className="word">ACTION</p>
-            <p className="word">TRANSFORMATION</p>
+            <div className="movingPill"></div>
+            <p>DETERMINATION.ACTION.TRANSFORMATION</p>
           </div>
           <div className="lsQuote">
             <p>

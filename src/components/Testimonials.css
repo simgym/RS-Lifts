@@ -1,0 +1,61 @@
+.testWrap {
+  overflow: hidden;
+  padding-bottom: 5%;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.testHead {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+.testFoot {
+  display: flex;
+  gap: 10%;
+  max-width: 300px;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-510%);
+  }
+}
+
+.testimonial {
+  border-radius: 1rem;
+  padding: 5%;
+  width: 380px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* gap: 2%; */
+  justify-content: flex-start;
+}
+
+.testImgCont img {
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 1rem;
+}
+.testFoot::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 100%;
+  visibility: hidden;
+}
+.testRevCont {
+  /* border: 1px solid red; */
+  text-align: left;
+  font-weight: 600;
+}
+@media (max-width: 425px) {
+  .testHead {
+    font-size: 3rem;
+  }
+}
