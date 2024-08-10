@@ -1,6 +1,5 @@
 .landpageWrapper {
   width: 100%;
-  /* border: 1px solid black; */
 }
 
 .landNavWrapper {
@@ -9,7 +8,6 @@
   top: 0;
   left: 0;
   z-index: 2;
-  /* border: 1px solid red; */
 }
 
 .lsWrapper {
@@ -40,35 +38,23 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  /* border: 1px solid red; */
   padding: 5%;
-  /* background: radial-gradient(
-    ellipse at 0% 0%,
-    #a0d0ff,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 1)
-  ); */
 }
 
 .dat {
   border-radius: 50px;
   border: 2px solid transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
-  /* box-shadow: 0 0 150px #31d2e8; */
-
   padding: 15px 20px;
   display: inline-block;
   position: relative;
   width: 100%;
+  background-color: black;
 }
 
 .movingPill {
   width: 100px;
   height: 100%;
-  /* background-color: #318ce7; */
   background: radial-gradient(
     circle at 125% 125%,
     #31d2e8,
@@ -94,8 +80,8 @@
 
 .dat p {
   position: relative;
-  /* z-index: 1; */
-  color: black;
+  color: rgb(255, 255, 255);
+
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -129,22 +115,10 @@
   .lsWrapper {
     flex-direction: column-reverse;
   }
-
-  /* .lsImg,
-  .lsCont {
-    min-width: 100%;
-  } */
-
-  /* .lsQuote {
-    font-size: 4rem;
-  } */
   .dat {
     width: 100%;
     margin-top: 2%;
   }
-  /* .lsCont {
-    padding: 0%;
-  } */
   .dat p {
     font-size: 1.8rem;
   }
@@ -161,8 +135,6 @@
   }
   .lsQuote {
     font-size: 3rem;
-    /* margin-top: 10%;
-    margin-bottom: 15%; */
     width: 80%;
     text-align: center;
   }
@@ -176,7 +148,7 @@
   }
 
   .dat p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .lsMission {
@@ -191,21 +163,18 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 455px) {
   .lsQuote {
     font-size: 2.5rem;
-    /* margin-top: 15%;
-    margin-bottom: 20%; */
   }
   .lsShape {
     font-size: 2.5rem;
   }
   .dat {
-    padding: 10px 20px;
-    /* box-shadow: 0 0 35px #31d2e8; */
+    padding: 10px 10px;
   }
   .dat p {
-    font-size: 0.65rem;
+    font-size: 0.82rem;
   }
 
   .lsMission {

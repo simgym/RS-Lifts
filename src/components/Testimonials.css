@@ -2,7 +2,6 @@
   overflow: hidden;
   padding-bottom: 5%;
   position: relative;
-  /* border: 1px solid red; */
 }
 .testHead {
   font-family: "Whisper", cursive;
@@ -34,7 +33,6 @@
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  /* gap: 2%; */
   justify-content: flex-start;
 }
 
@@ -50,7 +48,6 @@
   visibility: hidden;
 }
 .testRevCont {
-  /* border: 1px solid red; */
   text-align: left;
   font-weight: 600;
 }

@@ -1,7 +1,6 @@
 .footer-container {
   background-color: #318ce7;
   padding: 1rem;
-  /* border: 1px solid red; */
 }
 
 .footer-inner {
@@ -9,20 +8,17 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  /* border: 1px solid rgb(0, 0, 0); */
 }
 
 .footer-section {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  /* border: 1px solid red; */
 }
 
 .footer-column {
   color: white;
   margin: 0.5rem;
-  /* border: 1px solid red; */
   text-align: left;
 }
 
@@ -47,7 +43,6 @@
   align-items: flex-end;
   justify-content: left;
   gap: 2%;
-  /* border: 1px solid red; */
 }
 
 .footer-link {
@@ -76,8 +71,6 @@
 
 .footer-copyright {
   color: white;
-  /* font-size: 1rem; */
-  /* border: 1px solid black; */
 }
 @media (max-width: 768px) {
   .footer-title {

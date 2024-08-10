@@ -13,8 +13,8 @@ const LandingSection = () => {
       <div className="lsWrapper">
         <div className="lsCont">
           <div className="dat">
-            <div className="movingPill"></div>
-            <p>DETERMINATION.ACTION.TRANSFORMATION</p>
+            {/* <div className="movingPill"></div> */}
+            <p>{`DETERMINATION >ACTION >TRANSFORMATION`}</p>
           </div>
           <div className="lsQuote">
             <p>

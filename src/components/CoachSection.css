@@ -1,20 +1,14 @@
 .coach-container {
-  /* background-color: #002244; */
-  /* background: radial-gradient(
-    circle at 125% 125%,
-    #4882ee,
-    rgba(49, 210, 232, 1),
-    #31d2e8
-  ); */
-  padding: 2rem 0;
-  /* border: 1px solid rgb(225, 36, 178); */
+  padding: 0% 2%;
+  /* border: 1px solid red; */
 }
 
 .coach-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
-  /* border: 1px solid rgb(242, 245, 47); */
+  /* padding: 1rem; */
+  padding-bottom: 0;
+  /* border: 1px solid black; */
 }
 
 .coach-title {
@@ -25,24 +19,14 @@
   font-size: 2.5rem;
 }
 
-/* .coach-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 2rem;
-  border: 1px solid rgb(255, 255, 255);
-} */
 .coach-imgDesc {
   display: flex;
-  /* border: 1px solid red; */
 }
 .coach-image-container {
   flex: 1;
   width: 100%;
   height: auto;
   margin-top: 1rem;
-  /* padding: 1rem; */
-  /* border: 1px solid yellowgreen; */
   display: flex;
   align-items: center;
 }
@@ -54,15 +38,11 @@
 
 .coach-details {
   flex: 1;
-  /* max-width: 45%; */
   width: 100%;
-  /* margin: 1rem; */
   padding: 1rem;
-  /* border: 1px solid orange; */
 }
 
 .coach-name {
-  /* background-color: white; */
   font-weight: bold;
   font-size: 3rem;
   text-align: center;
@@ -75,7 +55,6 @@
   font-size: 1.5rem;
   margin-top: 1rem;
   text-align: left;
-  /* border: 1px solid rgb(0, 255, 170); */
   flex: 2;
   padding-left: 4%;
   line-height: 1.5;
@@ -85,7 +64,6 @@
   color: #4698ea;
 }
 .coach-learn-Social {
-  /* border: 1px solid white; */
   display: flex;
   align-items: center;
 }
@@ -93,7 +71,6 @@
   display: flex;
   justify-content: center;
   margin: 2rem 0;
-  /* border: 1px solid rgb(44, 255, 37); */
   flex: 2.2;
 }
 
@@ -114,8 +91,8 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  /* border: 1px solid rgb(255, 33, 33); */
   flex: 1;
+  /* border: 1px solid rgb(187, 12, 12); */
 }
 
 .coach-social-link {
@@ -137,7 +114,6 @@
     font-size: 0.8rem;
     flex: 1;
     display: flex;
-    /* align-items: flex-start; */
   }
 
   .coach-learn-more-btn {

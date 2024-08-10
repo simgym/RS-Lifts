@@ -13,32 +13,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  /* border: 1px solid red; */
 }
 
 .sdImg img {
   width: 50%;
   height: auto;
 }
-/* .sdImg {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-  max-width: 300px; 
-  max-height: 300px; 
-  overflow: hidden; 
-}
-
-.sdImg img {
-  width: 100%; 
-  height: auto;
-  object-fit: cover; 
-  max-width: 100%;
-  max-height: 100%; 
-} */
 
 .sdTitle {
   font-family: "Roboto", sans-serif;
@@ -107,7 +87,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 2%;
-  /* border: 1px solid black; */
 }
 
 .sdSecWrap {
@@ -118,12 +97,10 @@
   font-weight: 500;
   font-size: 1.1rem;
   margin: 2% 0%;
-  /* border: 1px solid blue; */
 }
 
 .sdServices {
   margin-top: 1%;
-  /* border: 1px solid red; */
 }
 
 .sdServciseHead {
@@ -141,7 +118,6 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  /* border: 1px solid red; */
   background-color: rgba(200, 200, 200, 0.515);
   border-radius: 999px;
   padding: 1rem;
@@ -160,7 +136,6 @@
   line-height: 1.5;
   padding: 3%;
   border-radius: 1rem;
-  /* background-color: rgba(200, 200, 200, 0.515); */
   margin-top: 1%;
   animation: slideDown 0.3s ease-in-out;
 }
