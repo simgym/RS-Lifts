@@ -8,13 +8,13 @@
   font-weight: 400;
   font-style: normal;
   font-size: 4rem;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 .testFoot {
   display: flex;
   gap: 10%;
   max-width: 300px;
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 @keyframes scroll {
@@ -22,7 +22,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-510%);
+    transform: translateX(-820%);
   }
 }
 
@@ -35,7 +35,12 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-
+.testimonial h2 {
+  background-color: black;
+}
+.testimonialCont {
+  /* padding: 0% 5%; */
+}
 .testImgCont img {
   max-width: 300px;
   max-height: 200px;

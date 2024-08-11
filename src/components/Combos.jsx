@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import beforeImage from "../assets/6O9A2315.jpg";
+import superBeginning from "../assets/6O9A2530.jpg";
+import superBulk from "../assets/superBulk.jpg";
+import superShred from "../assets/superShred.jpg";
 import { FaCircle } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
 import "./Combos.css";
@@ -9,13 +12,15 @@ const Combos = () => {
   const topPlans = [
     {
       services: ["SUPER BEGINNING", "SUPER SHRED"],
-      img: beforeImage,
+      img1: superBeginning,
+      img2: superShred,
       desc: "20-week STRONG FOUNDATION plan to build a strong foundation and shred fat for a leaner, stronger you",
       url: "/home/plan/combo/beginning+shred",
     },
     {
       services: ["SUPER BEGINNING", "SUPER BULK"],
-      img: beforeImage,
+      img1: superBeginning,
+      img2: superBulk,
       desc: "20-week PROGRESSIVELY INTENSE program to kickstart your journey, build muscle, and gain strength",
       url: "/home/plan/combo/beginning+bulk",
     },
@@ -99,7 +104,7 @@ const Combos = () => {
               <div className="comboHead">
                 <div className="comboServicesImg">
                   <div className="comboImg">
-                    <img src={item.img} />
+                    <img src={item.img1} />
                     <div className="overlay">
                       <p>{item.services[0]}</p>
                     </div>
@@ -108,7 +113,7 @@ const Combos = () => {
                     <IoMdAdd />
                   </span>
                   <div className="comboImg">
-                    <img src={item.img} />
+                    <img src={item.img2} />
                     <div className="overlay">
                       <p>{item.services[1]}</p>
                     </div>
@@ -132,7 +137,7 @@ const Combos = () => {
                 <div className="comboHead">
                   <div className="comboServicesImg">
                     <div className="comboImg">
-                      <img src={topPlans[currentIndex].img} />
+                      <img src={topPlans[currentIndex].img1} />
                       <div className="overlay">
                         <p>{topPlans[currentIndex].services[0]}</p>
                       </div>
@@ -141,7 +146,7 @@ const Combos = () => {
                       <IoMdAdd />
                     </span>
                     <div className="comboImg">
-                      <img src={topPlans[currentIndex].img} />
+                      <img src={topPlans[currentIndex].img2} />
                       <div className="overlay">
                         <p>{topPlans[currentIndex].services[1]}</p>
                       </div>

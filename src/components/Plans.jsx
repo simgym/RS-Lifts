@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import beforeImage from "../assets/6O9A2315.jpg";
+import superBeginning from "../assets/6O9A2530.jpg";
+import superBulk from "../assets/superBulk.jpg";
+import superShred from "../assets/superShred.jpg";
 import consultImg from "../assets/consult.jpg";
 import { FaCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -10,7 +13,7 @@ const Plans = () => {
     {
       name: "BEGINNING",
       services: ["Build Foundation", "Master Basics", "Start Strong"],
-      img: beforeImage,
+      img: superBeginning,
       desc: "8-week STRONG FOUNDATION plan to kickstart your fitness journey",
       url: "/home/plan/superplans/superbeginning",
     },
@@ -21,14 +24,14 @@ const Plans = () => {
         "Build Lean Muscles",
         "Overcome Plateaus",
       ],
-      img: beforeImage,
+      img: superShred,
       desc: "12-week PROGRESSIVELY INTENSE program to shred fat and get lean",
       url: "/home/plan/superplans/supershred",
     },
     {
       name: "BULK",
       services: ["Build Muscles", "Build Strength", "Elevate Performance"],
-      img: beforeImage,
+      img: superBulk,
       desc: "12-week ESCALATING INTENSITY plan to build muscle and gain strength",
       url: "/home/plan/superplans/superbulk",
     },

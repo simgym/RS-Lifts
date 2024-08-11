@@ -17,6 +17,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: 2.5rem;
+  /* border: 1px solid red; */
+  margin-top: 3%;
 }
 
 .coach-imgDesc {
@@ -43,8 +45,7 @@
 }
 
 .coach-name {
-  font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin: 1rem 0;
   color: #4698ea;
@@ -60,7 +61,7 @@
   line-height: 1.5;
 }
 .coach-description span {
-  font-weight: 700;
+  font-weight: 500;
   color: #4698ea;
 }
 .coach-learn-Social {
@@ -105,7 +106,7 @@
     font-size: 2rem;
   }
   .coach-name {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
   .coach-image-container {
     flex: 1;
@@ -129,14 +130,15 @@
     font-size: 1.5rem;
   }
   .coach-name {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .coach-description {
     color: rgb(0, 0, 0);
     font-size: 0.6rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     text-align: left;
+    /* border: 1px solid red; */
   }
   .coach-social-icons a {
     font-size: 1.2rem;

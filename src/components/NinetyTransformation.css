@@ -23,7 +23,8 @@
 
 .tfSecHead {
   text-align: left;
-  font-size: 2.1rem;
+  /* font-size: 2.1rem; */
+  font-size: 36px;
   color: rgb(255, 255, 255);
   padding-left: 5%;
 }
@@ -34,7 +35,8 @@
 
 .tfSecQuote {
   text-align: left;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.5;
   color: white;
@@ -102,11 +104,12 @@
   .tfSectionWrapper {
     display: flex;
     justify-content: center;
+    padding: 0% 3%;
   }
   .tfWrap {
     border-radius: 1rem;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
   }
   .tfSecHead {
     font-size: 0.8rem;
@@ -114,6 +117,7 @@
     width: 100%;
     text-align: center;
   }
+
   .tfSecHead span {
     color: #31d2e8;
   }
@@ -150,4 +154,12 @@
     min-height: 400px;
     flex: 1;
   }
+  /* .tfSectionImg {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  } */
+  /* .tfSectionImg img {
+    height: 300px;
+  } */
 }

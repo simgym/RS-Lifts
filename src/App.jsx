@@ -15,6 +15,9 @@ import SuperPlanDetails from "./pages/SuperPlanDetails";
 import consultImg from "./assets/consult.jpg";
 import beforeImage from "./assets/6O9A2315.jpg";
 import firstImg from "./assets/first.jpg";
+import superBeginning from "./assets/6O9A2530.jpg";
+import superBulk from "./assets/superBulk.jpg";
+import superShred from "./assets/superShred.jpg";
 import "./App.css";
 
 function App() {
@@ -22,7 +25,7 @@ function App() {
 
   const planDetails = [
     {
-      poster: beforeImage,
+      poster: superBeginning,
       title: "SUPER BEGINNING",
       target: "For Beginners",
       mrp: 6000,
@@ -57,7 +60,7 @@ function App() {
       ],
     },
     {
-      poster: beforeImage,
+      poster: superShred,
       title: "SUPER SHRED",
       target: "For Fat Loss and getting Lean",
       mrp: 6000,
@@ -93,7 +96,7 @@ function App() {
     },
 
     {
-      poster: beforeImage,
+      poster: superBulk,
       title: "SUPER BULK",
       target: "For Muscle Building and Gaining  Strength",
       mrp: 6000,

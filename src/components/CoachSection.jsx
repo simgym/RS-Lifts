@@ -24,9 +24,9 @@ const CoachSection = () => {
             </div>
             <div className="coach-description">
               <p>
-                <span> Rohit Sharma</span> is a certified fitness Trainer &
-                Certified Crossfit trainer With <span>18+ years</span> of
-                Coaching Experience & has trained over{" "}
+                <span className="coach-name"> Rohit Sharma</span> is a certified
+                fitness Trainer & Certified Crossfit trainer With{" "}
+                <span>18+ years</span> of Coaching Experience & has trained over{" "}
                 <span>25,000 Clients</span> offline and online in fitness
                 industry. He also many titles in bodybuilding and men’s physique
                 fitness model categories, which mainly including Mr. Delhi 1st

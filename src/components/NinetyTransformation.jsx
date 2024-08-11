@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import TransformationSlider from "./TransformationSlider";
+import beforeImage from "../assets/beforeTransformation.jpeg";
+import afterImage from "../assets/afterTransformation3.jpeg";
 import { Link } from "react-router-dom";
 import "./NinetyTransformation.css";
 
@@ -53,7 +55,8 @@ const NinetyTransformation = () => {
           <div className="tfSectionCont">
             <span className="tfSecHead">
               <h2>
-                <span>90 DAYS</span> ONLINE TRANSFORMATION PROGRAM
+                <span className="daysSpan">90 DAYS</span> ONLINE TRANSFORMATION
+                PROGRAM
               </h2>
             </span>
             <div className="tfFoot">
