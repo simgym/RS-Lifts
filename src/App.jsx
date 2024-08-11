@@ -15,7 +15,7 @@ import SuperPlanDetails from "./pages/SuperPlanDetails";
 import consultImg from "./assets/consult.jpg";
 import beforeImage from "./assets/6O9A2315.jpg";
 import firstImg from "./assets/first.jpg";
-import superBeginning from "./assets/6O9A2530.jpg";
+import superBeginning from "./assets/superBeginning.jpg";
 import superBulk from "./assets/superBulk.jpg";
 import superShred from "./assets/superShred.jpg";
 import "./App.css";

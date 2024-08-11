@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import beforeImage from "../assets/6O9A2315.jpg";
-import superBeginning from "../assets/6O9A2530.jpg";
+import superBeginning from "../assets/superBeginning.jpg";
 import superBulk from "../assets/superBulk.jpg";
 import superShred from "../assets/superShred.jpg";
 import { FaCircle } from "react-icons/fa";
