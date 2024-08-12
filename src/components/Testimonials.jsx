@@ -50,7 +50,13 @@ const Testimonials = () => {
 
   return (
     <div className="testWrap">
-      <div className="testHead">Testimonials</div>
+      <div className="testHead">
+        <p>Testimonials</p>
+        <span>
+          <span className="ninetyTf">90 Days</span> Transformation
+        </span>
+      </div>
+
       <div className="testFoot">
         {duplicatedTestimonials.map((item, index) => (
           <div key={index} className="testimonial">

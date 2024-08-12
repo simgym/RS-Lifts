@@ -231,7 +231,9 @@
     overflow: hidden;
     width: 100%;
     border-top: 1px solid #04befe;
-    margin-bottom: 5%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.667);
+    margin-bottom: 10%;
+    margin-top: 3%;
   }
   .tfSecHead {
     font-size: 0.8rem;
@@ -252,11 +254,17 @@
   }
 
   .tfSecQuote {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
-
+  .tfSecButton {
+    /* border: 1px solid white; */
+    justify-content: center;
+    padding-right: 3%;
+  }
   .tfSecButton a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    width: 100%;
+    border-radius: 10px;
   }
   .tfDisc {
     font-size: 3.5rem;

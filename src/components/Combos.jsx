@@ -95,6 +95,9 @@ const Combos = () => {
     <div className="plansWrap">
       <div className="superPlans">
         <h2>COMBO OFFERS</h2>
+        <p>
+          <span>30%</span> off
+        </p>
       </div>
       <div className="comboWrap">
         {!isSmallScreen &&

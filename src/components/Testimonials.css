@@ -5,12 +5,21 @@
   color: black;
 }
 .testHead {
-  font-family: "Whisper", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 4rem;
   margin-bottom: 2%;
   color: white;
+}
+.testHead p {
+  font-family: "Whisper", cursive;
+}
+.testHead span {
+  font-size: 2rem;
+}
+.ninetyTf {
+  color: #04befe;
+  font-weight: 500;
 }
 .testFoot {
   display: flex;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TransformationSlider from "./TransformationSlider";
-import beforeImage from "../assets/beforeTransformation.jpeg";
-import afterImage from "../assets/afterTransformation3.jpeg";
+import beforeImage from "../assets/beforeTransformation2.jpeg";
+import afterImage from "../assets/afterTransformation4.jpeg";
 
 import { Link } from "react-router-dom";
 import "./NinetyTransformation.css";

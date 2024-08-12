@@ -2,7 +2,9 @@
   /* padding: 3% 3%; */
   color: rgb(255, 255, 255);
 }
-
+.superPlans p span {
+  color: rgb(255, 42, 42);
+}
 .comboWrap {
   display: flex;
   justify-content: space-between;
@@ -22,6 +24,8 @@
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 -6px 12px rgba(239, 171, 245, 0.511),
+    0 2px 4px rgba(196, 181, 249, 0.468), 0 4px 8px rgba(239, 171, 245, 0.511);
 
   display: flex;
   flex-direction: column;

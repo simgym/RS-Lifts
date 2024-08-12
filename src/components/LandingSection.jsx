@@ -1,4 +1,4 @@
-import landingImg from "../assets/first.jpg";
+import landingImg from "../assets/first1.jpg";
 import Navbar from "./Navbar";
 
 import "./LandingSection.css";

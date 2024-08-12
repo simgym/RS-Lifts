@@ -109,7 +109,7 @@
 .lsShape {
   font-family: "Bungee Outline", sans-serif;
   font-style: normal;
-  color: #31d2e8;
+  color: #04befe;
   /* color: white; */
   font-size: 6rem;
   /* color: rgb(255, 132, 0); */
@@ -164,7 +164,7 @@
     animation: movePill 8s linear infinite;
   }
   .lsShape {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -173,7 +173,7 @@
     font-size: 2.5rem;
   }
   .lsShape {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .dat {
     padding: 10px 10px;

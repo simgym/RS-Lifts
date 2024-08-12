@@ -26,8 +26,11 @@
     rgb(170, 255, 169) 11.2%,
     rgb(17, 255, 189) 91.1%
   );
-  box-shadow: 0 4px 8px rgba(170, 255, 169, 0.331),
-    0 6px 20px rgba(17, 255, 188, 0.248);
+  /* box-shadow: 0 4px 8px rgba(170, 255, 169, 0.331),
+    0 6px 20px rgba(17, 255, 188, 0.248); */
+  box-shadow: 0 -6px 12px rgba(170, 255, 169, 0.5),
+    0 2px 4px rgba(170, 255, 169, 0.2), 0 4px 8px rgba(17, 255, 188, 0.3);
+
   border-radius: 1rem;
   overflow: hidden;
   /* border-top: 1px solid rgb(17, 255, 189); */
@@ -41,8 +44,8 @@
   );
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(255, 156, 129, 0.335),
-    0 6px 20px rgba(255, 78, 78, 0.408);
+  box-shadow: 0 -6px 12px rgba(255, 156, 129, 0.5),
+    0 2px 4px rgba(255, 156, 129, 0.2), 0 4px 8px rgba(255, 78, 78, 0.3);
 }
 .topPlansWrap {
   padding: 0% 3%;
@@ -54,7 +57,10 @@
     rgba(49, 210, 232, 1),
     #4882ee
   );
-  box-shadow: 0 4px 8px #31d3e853, 0 6px 20px #4882ee51;
+
+  /* box-shadow: 0 6px 12px #31d3e885, 0 8px 24px #4882ee80; */
+  box-shadow: 0 -6px 12px #31d3e885, 0 4px 8px #31d3e853, 0 6px 20px #4882ee51;
+
   border-radius: 1rem;
   overflow: hidden;
 }
