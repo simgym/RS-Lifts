@@ -1,5 +1,6 @@
 .plansWrap {
   /* padding: 3% 3%; */
+  color: rgb(255, 255, 255);
 }
 
 .comboWrap {
@@ -7,17 +8,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 2%;
-  padding: 0% 1%;
+  padding: 2% 3%;
   /* border: 1px solid rgb(0, 128, 255); */
-  margin-top: 3%;
-}
-
-.superPlans {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.8rem;
-  margin-bottom: 2%;
+  /* margin-top: 1%; */
 }
 
 .comboPlan {
@@ -46,6 +39,7 @@
   display: flex;
   align-items: center;
   font-size: 2rem;
+  color: black;
 }
 .comboImg {
   flex: 1.5;
@@ -91,6 +85,7 @@
   text-align: left;
   flex: 2;
   font-weight: 800;
+  color: black;
 }
 
 .comboDesc p {
@@ -160,7 +155,7 @@
     width: 100%;
   }
   .comboFoot {
-    margin: 5% 0%;
+    /* margin: 5% 0%; */
   }
   .comboButton {
     padding: 0% 2%;
@@ -173,6 +168,9 @@
   }
 }
 @media (max-width: 426px) {
+  .comboPlan {
+    padding-bottom: 2%;
+  }
   .comboFoot {
     flex-direction: column;
   }

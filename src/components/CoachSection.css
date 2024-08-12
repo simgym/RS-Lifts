@@ -12,7 +12,7 @@
 }
 
 .coach-title {
-  color: black;
+  /* color: black; */
   font-family: "Whisper", cursive;
   font-weight: 400;
   font-style: normal;
@@ -48,11 +48,11 @@
   font-size: 2rem;
   text-align: center;
   margin: 1rem 0;
-  color: #4698ea;
+  color: #31d2e8;
 }
 
 .coach-description {
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   font-size: 1.5rem;
   margin-top: 1rem;
   text-align: left;
@@ -62,7 +62,7 @@
 }
 .coach-description span {
   font-weight: 500;
-  color: #4698ea;
+  color: #31d2e8;
 }
 .coach-learn-Social {
   display: flex;
@@ -83,8 +83,11 @@
   cursor: pointer;
   text-decoration: none;
   font-weight: 400;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   border-radius: 999px;
+  /* border: 1px solid white; */
+  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  font-weight: 600;
 }
 
 .coach-social-icons {
@@ -97,7 +100,7 @@
 }
 
 .coach-social-link {
-  color: #4698ea;
+  color: #31d2e8;
   font-size: 2rem;
   margin: 0 0.5rem;
 }
@@ -134,7 +137,7 @@
   }
 
   .coach-description {
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     font-size: 0.6rem;
     /* margin-top: 1rem; */
     text-align: left;

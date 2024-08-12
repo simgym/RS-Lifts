@@ -10,8 +10,14 @@
   /* line-height: 1.5; */
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: rgb(18, 16, 16); */
+  /* background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  ); */
+  background-color: black;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

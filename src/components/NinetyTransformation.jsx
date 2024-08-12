@@ -2,15 +2,18 @@ import { useEffect, useState } from "react";
 import TransformationSlider from "./TransformationSlider";
 import beforeImage from "../assets/beforeTransformation.jpeg";
 import afterImage from "../assets/afterTransformation3.jpeg";
+
 import { Link } from "react-router-dom";
 import "./NinetyTransformation.css";
 
 const NinetyTransformation = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 550);
+  const [isTabScreen, setIsTabScreen] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 550);
+      setIsTabScreen(window.innerWidth <= 768);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -41,13 +44,44 @@ const NinetyTransformation = () => {
 
             <span className="tfSecButton">
               <Link to="/home/plan/90+day+online+transformation+program">
-                Check Now
+                Join Now
               </Link>
             </span>
           </div>
-          <div className="tfSectionImg">
+          {isTabScreen && (
+            <div className="tfSectionImg">
+              {/* <TransformationSlider /> */}
+              <div className="beforeImg">
+                <img src={beforeImage} />
+                <div className="ninetyOverlay">
+                  <p>Before</p>
+                </div>
+              </div>
+              <div className="afterImg">
+                <img src={afterImage} />
+                <div className="ninetyOverlay">
+                  <p>After</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {!isTabScreen && (
+            <div className="tfSectionImg">
+              <div className="beforeImg">
+                {/* <p>Before</p> */}
+                <img src={beforeImage} />
+              </div>
+              <div className="afterImg">
+                {/* <p>After</p> */}
+                <img src={afterImage} />
+              </div>
+            </div>
+          )}
+
+          {/* <div className="tfSectionImg">
             <TransformationSlider />
-          </div>
+          </div> */}
         </div>
       )}
       {isSmallScreen && (
@@ -74,12 +108,24 @@ const NinetyTransformation = () => {
                 </span>
                 <span className="tfSecButton">
                   <Link to="/home/plan/90+day+online+transformation+program">
-                    Check Now
+                    Join Now
                   </Link>
                 </span>
               </div>
               <div className="tfSectionImg">
-                <TransformationSlider />
+                {/* <TransformationSlider /> */}
+                <div className="beforeImg">
+                  <img src={beforeImage} />
+                  <div className="ninetyOverlay">
+                    <p>Before</p>
+                  </div>
+                </div>
+                <div className="afterImg">
+                  <img src={afterImage} />
+                  <div className="ninetyOverlay">
+                    <p>After</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
