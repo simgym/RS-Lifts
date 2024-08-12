@@ -22,7 +22,12 @@
   gap: 2rem;
   padding-bottom: 0%;
   flex: 2;
-  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  /* background: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+  background: linear-gradient(
+    88.8deg,
+    rgb(239, 171, 245) 13.4%,
+    rgb(196, 181, 249) 76.3%
+  );
 }
 
 .tfSecHead {
@@ -50,7 +55,7 @@
   margin-bottom: 5%;
   padding-left: 5%;
   padding-right: 2%;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .tfSecButton {
   width: 100%;
