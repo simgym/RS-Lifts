@@ -11,7 +11,9 @@
   ); */
   /* background-color: white; */
   /* background-color: #003457; */
-  box-shadow: 0px 4px 100px rgba(0, 141, 242, 0.282);
+  box-shadow: 0px 4px 100px rgba(239, 171, 245, 0.381);
+  /* box-shadow: 0 -6px 12px rgba(239, 171, 245, 0.789),
+    0 2px 4px rgba(196, 181, 249, 0.468), 0 4px 8px rgba(239, 171, 245, 0.511); */
 }
 
 .tfSectionCont {
@@ -42,7 +44,8 @@
 .tfSecHead span {
   /* color: rgba(0, 0, 0, 0.785); */
   /* color: rgb(255, 132, 0); */
-  color: #31d2e8;
+  /* color: #31d2e8; */
+  color: rgb(239, 171, 245);
 }
 
 .tfSecQuote {
@@ -255,7 +258,7 @@
   }
 
   .tfSecHead span {
-    color: #04befe;
+    /* color: #04befe; */
     /* color: black; */
     font-size: 1.5rem;
   }
@@ -312,6 +315,7 @@
     min-height: 400px;
     flex: 1;
     /* background-color: rgb(229, 229, 229); */
+    background-color: black;
   }
   .tfSectionImg img {
     border-bottom-right-radius: 1rem;
