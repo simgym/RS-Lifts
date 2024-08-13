@@ -10,16 +10,20 @@
   font-size: 4rem;
   margin-bottom: 2%;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .testHead p {
   font-family: "Whisper", cursive;
 }
-.testHead span {
-  font-size: 2rem;
+
+.testSubHead {
+  font-size: 1.8rem;
 }
 .ninetyTf {
   color: #04befe;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 2.2rem;
 }
 .testFoot {
   display: flex;
@@ -71,5 +75,13 @@
   .testHead {
     font-size: 3rem;
     margin-bottom: 8%;
+    /* border: 1px solid red; */
+  }
+  .testHead p {
+    /* border: 1px solid white; */
+    padding: 0;
+  }
+  .testSubHead {
+    /* border: 1px solid yellow; */
   }
 }

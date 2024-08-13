@@ -124,7 +124,7 @@ const Plans = () => {
   return (
     <div className="plansWrap">
       <div className="onlineSessions">{/* <h2>ONLINE GUIDE</h2> */}</div>
-      <div className="bottomPlansWrap">
+      {/* <div className="bottomPlansWrap">
         {bottomPlans.map((item, index) => (
           <div className="bottomPlan" key={index}>
             <div className="bottomPlanName">
@@ -145,7 +145,7 @@ const Plans = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
       <div className="superPlans">
         <h2>SUPER PLANS</h2>
       </div>
@@ -243,6 +243,28 @@ const Plans = () => {
             ))}
           </div>
         )}
+      </div>
+      <div className="bottomPlansWrap">
+        {bottomPlans.map((item, index) => (
+          <div className="bottomPlan" key={index}>
+            <div className="bottomPlanName">
+              <p>{item.name}</p>
+            </div>
+            <div className="bottomPlanFoot">
+              <span className="bottomPlanDescButton">
+                <div className="bottomPlanDesc">
+                  <p>{item.desc}</p>
+                </div>
+                <div className="bottomPlanButton">
+                  <Link to={item.url}>Check</Link>
+                </div>
+              </span>
+              <span className="bottomPlanImg">
+                <img src={item.img} />
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

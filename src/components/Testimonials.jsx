@@ -52,7 +52,7 @@ const Testimonials = () => {
     <div className="testWrap">
       <div className="testHead">
         <p>Testimonials</p>
-        <span>
+        <span className="testSubHead">
           <span className="ninetyTf">90 Days</span> Transformation
         </span>
       </div>

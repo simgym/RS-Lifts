@@ -60,7 +60,6 @@
 
   /* box-shadow: 0 6px 12px #31d3e885, 0 8px 24px #4882ee80; */
   box-shadow: 0 -6px 12px #31d3e885, 0 4px 8px #31d3e853, 0 6px 20px #4882ee51;
-
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -180,7 +179,7 @@
     rgba(49, 210, 232, 1),
     #4882ee
   ); */
-  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background: linear-gradient(to top, #4481eb 0%, #04c0fe 100%);
   color: white;
   font-weight: 800;
   padding: 2%;
@@ -324,6 +323,8 @@
   }
   .bottomPlansWrap {
     flex-direction: column;
+    margin-top: 8%;
+    margin-bottom: 8%;
   }
   .bottomPlanName {
     padding: 3% 0%;

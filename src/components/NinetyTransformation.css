@@ -11,9 +11,9 @@
   ); */
   /* background-color: white; */
   /* background-color: #003457; */
-  box-shadow: 0px 4px 100px rgba(239, 171, 245, 0.381);
-  /* box-shadow: 0 -6px 12px rgba(239, 171, 245, 0.789),
-    0 2px 4px rgba(196, 181, 249, 0.468), 0 4px 8px rgba(239, 171, 245, 0.511); */
+  /* box-shadow: 0px 4px 100px rgba(239, 171, 245, 0.381); */
+  /* box-shadow: 0px 4px 100px rgba(59, 173, 255, 0.371); */
+  box-shadow: 0 -6px 12px #31d3e885, 0 4px 8px #31d3e853, 0 6px 20px #4882ee51;
 }
 
 .tfSectionCont {
@@ -25,11 +25,18 @@
   padding-bottom: 0%;
   flex: 2;
   /* background: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     88.8deg,
     rgb(239, 171, 245) 13.4%,
     rgb(196, 181, 249) 76.3%
+  ); */
+  background: radial-gradient(
+    circle at 125% 125%,
+    #31d2e8,
+    rgba(49, 210, 232, 1),
+    #4882ee
   );
+  /* background: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
 }
 
 .tfSecHead {
@@ -38,14 +45,15 @@
   /* font-size: 36px; */
   color: rgb(0, 0, 0);
   padding-left: 5%;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .tfSecHead span {
   /* color: rgba(0, 0, 0, 0.785); */
   /* color: rgb(255, 132, 0); */
-  /* color: #31d2e8; */
-  color: rgb(239, 171, 245);
+  color: #31d2e8;
+  /* color: rgb(239, 171, 245); */
 }
 
 .tfSecQuote {
@@ -103,9 +111,9 @@
 
 .ninetyOverlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5);  */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
   padding: 0.5rem 0;
@@ -115,13 +123,13 @@
 
 .beforeImg .ninetyOverlay {
   content: "Before";
-  background-color: rgba(0, 0, 0, 0.861);
+  /* background-color: rgba(0, 0, 0, 0.861); */
 }
 
 .afterImg .ninetyOverlay {
   content: "After";
   /* background-color: black; */
-  background-color: rgba(0, 0, 0, 0.861);
+  /* background-color: rgba(0, 0, 0, 0.861); */
 }
 
 .tfSectionImg img {
@@ -205,8 +213,8 @@
 
   .beforeImg .ninetyOverlay,
   .afterImg .ninetyOverlay {
-    top: 0;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.768);
     width: 100%;
     text-align: center;
     padding: 0.5rem 0;
