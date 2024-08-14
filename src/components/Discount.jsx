@@ -11,13 +11,14 @@ const Discount = ({ setShowDiscount }) => {
         </h3>
       </div>
       <div className="dsCont">
+        {/* <h2>Mention Offers here</h2> */}
         <h2>
-          <span style={{ color: "red", fontSize: "1.8rem" }}>90 DAYS</span> BODY
+          <span style={{ color: "red", fontSize: "1.7rem" }}>90 DAYS</span> BODY
           TRANSFORMATION PROGRAM
         </h2>
         <div className="dsTimeCont">
           <p className="dsTime">
-            27d 17h 15m 9s <span style={{ color: "black" }}>Left</span>
+            27d 17h 15m 9s <span style={{ color: "black" }}>left</span>
           </p>
           <p className="hurry">HURRY UP !!</p>
         </div>

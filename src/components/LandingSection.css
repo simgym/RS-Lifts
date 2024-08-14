@@ -23,6 +23,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: imgMoveUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes imgMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .lsImg img {
@@ -39,6 +54,20 @@
   align-items: center;
   flex: 1;
   padding: 5%;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: contSlideIn 1s ease-out forwards;
+}
+
+@keyframes contSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .dat {
@@ -81,7 +110,6 @@
 .dat p {
   position: relative;
   /* color: rgb(255, 255, 255); */
-
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -110,9 +138,7 @@
   font-family: "Bungee Outline", sans-serif;
   font-style: normal;
   color: #04befe;
-  /* color: white; */
   font-size: 6rem;
-  /* color: rgb(255, 132, 0); */
 }
 
 @media (max-width: 1024px) {

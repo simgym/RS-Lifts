@@ -1,5 +1,7 @@
 .dsWrap {
-  background-color: #ffd700;
+  /* background-color: #ffd700; */
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  /* background: radial-gradient(circle at 6.4% 9.8%, rgb(88, 242, 174) 0%, rgb(0, 130, 240) 97.9%); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,14 +9,16 @@
   min-height: 20rem;
   border-radius: 1rem;
   overflow: hidden;
+  color: black;
 }
 .dsHead {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-size: 1.5rem;
 }
 .dsAmt {
-  color: #ffd700;
+  /* color: #ffd700; */
+  color: rgb(86, 232, 245);
   font-size: 2.5rem;
 }
 .dsCont {
@@ -44,7 +48,9 @@
   font-size: 1rem;
   border: none;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
+
 .dsTimeCont {
   flex: 1;
   display: flex;

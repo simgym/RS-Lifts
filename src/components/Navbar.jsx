@@ -23,18 +23,14 @@ const Navbar = () => {
                 currentPath === "/aboutus" ? "navactive" : ""
               }`}
             >
-              <a className="nav-link" href="/home/aboutus">
-                ABOUT
-              </a>
+              <a className="nav-link">ABOUT</a>
             </li>
             <li
               className={`nav-item ${
                 currentPath === "/contactus" ? "navactive" : ""
               }`}
             >
-              <a className="nav-link" href="/home/contactus">
-                CONTACT US
-              </a>
+              <a className="nav-link">CONTACT US</a>
             </li>
           </ul>
         </div>
