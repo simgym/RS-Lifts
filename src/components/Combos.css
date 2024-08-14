@@ -117,6 +117,18 @@
   text-decoration: none;
 }
 
+.planInd {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 2% 0%;
+}
+.normInd {
+  width: 20px;
+  height: 20px;
+  color: rgba(147, 147, 147, 0.561);
+}
+
 @media (min-width: 769px) {
   .plansWrap {
     /* padding: 3% 0%; */

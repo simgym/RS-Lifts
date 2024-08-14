@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { FaCircle } from "react-icons/fa";
 import "./SuperPlanDetails.css";
 
 const SuperPlanDetails = ({ details }) => {
@@ -109,6 +110,16 @@ const SuperPlanDetails = ({ details }) => {
                   }}
                 />
               </div>
+            </div>
+          )}
+          {isSmallScreen && (
+            <div className="detailplanInd">
+              <span className={currentMediaIndex === 0 ? "" : "detailnormInd"}>
+                <FaCircle />
+              </span>
+              <span className={currentMediaIndex === 1 ? "" : "detailnormInd"}>
+                <FaCircle />
+              </span>
             </div>
           )}
         </div>

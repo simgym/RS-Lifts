@@ -9,6 +9,7 @@ const Discount = ({ setShowDiscount }) => {
           FLAT
           <span className="dsAmt"> 60% </span> OFF
         </h3>
+        {/* <p>Diwali Offer</p> */}
       </div>
       <div className="dsCont">
         {/* <h2>Mention Offers here</h2> */}

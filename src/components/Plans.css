@@ -1,24 +1,15 @@
-.plansWrap {
-  /* padding: 0% 3%; */
-  /* border: 1px solid red; */
-  /* background-color: white; */
-  background-color: rgb(0, 0, 0);
-}
 .plansContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2%;
   padding: 0% 1%;
-  /* border: 1px solid rgb(0, 255, 17); */
 }
 .superPlans {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.8rem;
-  /* margin: 2% 0% 2% 0%; */
-  /* border: 1px solid red; */
 }
 .otherPlan {
   background: radial-gradient(
@@ -26,14 +17,11 @@
     rgb(170, 255, 169) 11.2%,
     rgb(17, 255, 189) 91.1%
   );
-  /* box-shadow: 0 4px 8px rgba(170, 255, 169, 0.331),
-    0 6px 20px rgba(17, 255, 188, 0.248); */
   box-shadow: 0 -6px 12px rgba(170, 255, 169, 0.5),
     0 2px 4px rgba(170, 255, 169, 0.2), 0 4px 8px rgba(17, 255, 188, 0.3);
 
   border-radius: 1rem;
   overflow: hidden;
-  /* border-top: 1px solid rgb(17, 255, 189); */
 }
 
 .beginningPlan {
@@ -57,8 +45,6 @@
     rgba(49, 210, 232, 1),
     #4882ee
   );
-
-  /* box-shadow: 0 6px 12px #31d3e885, 0 8px 24px #4882ee80; */
   box-shadow: 0 -6px 12px #31d3e885, 0 4px 8px #31d3e853, 0 6px 20px #4882ee51;
   border-radius: 1rem;
   overflow: hidden;
@@ -84,7 +70,6 @@
 
 .topPlanServicesImg {
   display: flex;
-  /* border: 1px solid white; */
 }
 
 .topPlanServices {
@@ -109,7 +94,6 @@
 }
 .topPlanImg {
   flex: 1.5;
-  /* border: 1px solid yellow; */
 }
 
 .topPlanImg img {
@@ -153,32 +137,22 @@
   justify-content: center;
   gap: 10%;
   padding: 2% 3%;
-  /* background-color: black; */
 }
 .onlineSessions {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.8rem;
-  /* margin-top: 2%; */
 }
 .bottomPlan {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid #4882ee; */
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 8px #31d3e853, 0 6px 20px #4882ee51;
   color: white;
 }
 .bottomPlanName {
-  /* text-align: center;
-  background: radial-gradient(
-    circle at 125% 125%,
-    #31d2e8,
-    rgba(49, 210, 232, 1),
-    #4882ee
-  ); */
   background: linear-gradient(to top, #4481eb 0%, #04c0fe 100%);
   color: white;
   font-weight: 800;
@@ -190,7 +164,6 @@
   display: flex;
   align-items: center;
   gap: 2%;
-  /* color: black; */
 }
 .bottomPlanDescButton {
   flex: 1;
@@ -200,12 +173,6 @@
 }
 
 .bottomPlanButton a {
-  /* background: radial-gradient(
-    circle at 125% 125%,
-    #31d2e8,
-    rgba(49, 210, 232, 1),
-    #4882ee
-  ); */
   background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
   font-weight: 600;
   border: none;
@@ -254,9 +221,6 @@
 }
 
 @media (min-width: 769px) {
-  /* .plansWrap {
-    padding: 3% 0%;
-  } */
   .topPlansWrap {
     padding: 1% 0%;
   }
@@ -278,6 +242,10 @@
   .topPlanButton a {
     font-size: 0.8rem;
   }
+  .bottomPlansWrap {
+    margin-bottom: 3%;
+    margin-top: 2%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -294,11 +262,6 @@
   }
   .onlineSessions {
     margin-top: 0%;
-  }
-  .otherPlan,
-  .shreadPlan,
-  .beginningPlan {
-    /* margin-bottom: 5%; */
   }
   .topPlansWrap {
     flex-direction: column;
@@ -377,7 +340,6 @@
   }
   .topPlansWrap {
     gap: 5%;
-    /* padding: 0% 2%; */
   }
 
   .topPlanHead {

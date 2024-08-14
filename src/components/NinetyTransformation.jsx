@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import TransformationSlider from "./TransformationSlider";
+// import TransformationSlider from "./TransformationSlider";
 import beforeImage from "../assets/beforeTransformation2.jpeg";
 import afterImage from "../assets/afterTransformation4.jpeg";
 

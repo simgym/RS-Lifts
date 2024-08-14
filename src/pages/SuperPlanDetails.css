@@ -177,7 +177,17 @@
   margin-top: 1%;
   animation: slideDown 0.3s ease-in-out;
 }
-
+.detailplanInd {
+  display: flex;
+  justify-content: center;
+  gap: 50%;
+  padding: 2% 0%;
+}
+.detailnormInd {
+  width: 20px;
+  height: 20px;
+  color: rgba(147, 147, 147, 0.561);
+}
 @keyframes slideDown {
   from {
     max-height: 0;

@@ -23,6 +23,7 @@
 
 .coach-imgDesc {
   display: flex;
+  /* border: 1px solid red; */
 }
 .coach-image-container {
   flex: 1;
@@ -30,7 +31,8 @@
   height: auto;
   margin-top: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  /* border: 1px solid yellow; */
 }
 
 .coach-image {
@@ -41,7 +43,7 @@
 .coach-details {
   flex: 1;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .coach-name {
