@@ -20,10 +20,16 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 0 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fff;
+  /* border: 1px solid red; */
+  width: 11%;
+}
+.navbar-brand img {
+  /* width: 200px; */
+  width: 100%;
 }
 
 .navbar-logo {

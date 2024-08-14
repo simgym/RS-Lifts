@@ -23,6 +23,7 @@ const NinetyTransformation = () => {
       {/* <div className="tfDisc">
         <p>60% OFF</p>
       </div> */}
+
       {!isSmallScreen && (
         <div className="tfWrap">
           <div className="tfSectionCont">

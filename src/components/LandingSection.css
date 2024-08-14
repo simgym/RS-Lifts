@@ -1,5 +1,6 @@
 .landpageWrapper {
   width: 100%;
+  margin-bottom: 3%;
 }
 
 .landNavWrapper {
@@ -142,6 +143,9 @@
 }
 
 @media (max-width: 1024px) {
+  .landpageWrapper {
+    margin: 0;
+  }
   .lsWrapper {
     flex-direction: column-reverse;
   }

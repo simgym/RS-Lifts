@@ -19,6 +19,9 @@ const Homepage = ({ setShowDiscount, showDiscount }) => {
         </div>
       )}
       <LandingSection />
+      <div className="superPlans">
+        <h2>CUSTOM PLAN</h2>
+      </div>
       <NinetyTransformation />
       <Plans />
       <Combos />

@@ -14,6 +14,11 @@ const SuperPlanDetails = ({ details }) => {
   const sliderRef = useRef(null);
 
   useEffect(() => {
+    // Scroll to top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
     };

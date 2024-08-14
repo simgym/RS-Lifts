@@ -6,6 +6,8 @@ import test4 from "../assets/test4.jpeg";
 import test5 from "../assets/test5.jpeg";
 import test6 from "../assets/test6.jpeg";
 import test7 from "../assets/test7.jpeg";
+import test8 from "../assets/test8.jpeg";
+import test9 from "../assets/test9.jpeg";
 
 const Testimonials = () => {
   const testimonialList = [
@@ -40,6 +42,16 @@ const Testimonials = () => {
       img: test7,
       review:
         "Rohit’s guidance helped me achieve my fitness goals beyond expectations!",
+    },
+    {
+      img: test8,
+      review:
+        "The journey was challenging, but the results were worth every effort!",
+    },
+    {
+      img: test9,
+      review:
+        "I never imagined such a dramatic change in just 90 days – truly amazing!",
     },
   ];
   const duplicatedTestimonials = [

@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../assets/rs-fitness-lift-logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,7 +8,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container-fluid">
-        <h1 className="navbar-brand">Logo</h1>
+        <h1 className="navbar-brand">
+          <img src={logo} />
+        </h1>
         <div className="navbar-collapse">
           <ul className="navbar-nav">
             <li
