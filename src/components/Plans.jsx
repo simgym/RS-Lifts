@@ -4,6 +4,7 @@ import superBeginning from "../assets/superBeginning.jpg";
 import superBulk from "../assets/superBulk.jpg";
 import superShred from "../assets/superShred.jpg";
 import consultImg from "../assets/consult.jpg";
+import consultImg1 from "../assets/consult1.jpg";
 import { FaCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Plans.css";
@@ -47,7 +48,7 @@ const Plans = () => {
     {
       name: "ONE TO ONE PERSONAL TRAINING",
       desc: "Online Live Transformation Video on Video Call",
-      img: consultImg,
+      img: consultImg1,
       url: "/home/plan/onlinept",
     },
   ];
@@ -95,7 +96,7 @@ const Plans = () => {
 
     const timer = setTimeout(() => {
       setCurrentTopIndex((prev) => (prev + 1) % topPlans.length);
-    }, 3000);
+    }, 7000);
 
     return () => {
       if (topSlider) {

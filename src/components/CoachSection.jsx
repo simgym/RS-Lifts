@@ -1,15 +1,34 @@
+import React, { useState, useEffect } from "react";
 import coachImg from "../assets/coach.jpg";
+import coach1 from "../assets/coach1a.jpg";
+import coach2 from "../assets/coach2a.jpg";
+import coach3 from "../assets/coach3a.jpg";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 import { RiYoutubeFill } from "react-icons/ri";
 import "./CoachSection.css";
 
 const CoachSection = () => {
+  const [currentImage, setCurrentImage] = useState(coachImg);
+
+  useEffect(() => {
+    const images = [coachImg, coach1, coach2, coach3];
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % images.length;
+      setCurrentImage(images[index]);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const data = {
     instagram: "",
     whatsapp: "",
     youtube: "",
   };
+
   return (
     <div className="coach-container">
       <div className="coach-inner">
@@ -17,10 +36,9 @@ const CoachSection = () => {
           <h2>Meet Your Coach</h2>
         </div>
         <div className="coach-details">
-          {/* <h1 className="coach-name">Rohit Sharma</h1> */}
           <div className="coach-imgDesc">
             <div className="coach-image-container">
-              <img src={coachImg} className="coach-image" alt="Coach" />
+              <img src={currentImage} className="coach-image" alt="Coach" />
             </div>
             <div className="coach-description">
               <p>
@@ -43,6 +61,7 @@ const CoachSection = () => {
                 href={data.instagram}
                 target="_blank"
                 className="coach-social-link"
+                rel="noopener noreferrer"
               >
                 <RiInstagramLine />
               </a>
@@ -50,6 +69,7 @@ const CoachSection = () => {
                 href={`https://wa.me/${data.whatsapp}?text=Hello,%20Rohit%20Sharma`}
                 target="_blank"
                 className="coach-social-link"
+                rel="noopener noreferrer"
               >
                 <RiWhatsappLine />
               </a>
@@ -57,6 +77,7 @@ const CoachSection = () => {
                 href={data.youtube}
                 target="_blank"
                 className="coach-social-link"
+                rel="noopener noreferrer"
               >
                 <RiYoutubeFill />
               </a>

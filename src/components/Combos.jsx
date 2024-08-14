@@ -67,7 +67,7 @@ const Combos = () => {
 
     const timer = setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % topPlans.length);
-    }, 3000);
+    }, 7000);
 
     return () => {
       if (slider) {
@@ -93,12 +93,24 @@ const Combos = () => {
 
   return (
     <div className="plansWrap">
-      <div className="superPlans">
-        <h2>COMBO OFFERS</h2>
-        <p>
-          <span>30%</span> off
-        </p>
-      </div>
+      {isSmallScreen && (
+        <div className="superPlans">
+          <h2>COMBO OFFERS</h2>
+          <p>
+            <span className="thirtyOff">30%</span> off
+          </p>
+        </div>
+      )}
+      {!isSmallScreen && (
+        <div className="superPlans">
+          <h2>
+            COMBO OFFERS - <span className="thirtyOff">30%</span> off
+          </h2>
+          {/* <p>
+          <span className="thirtyOff">30%</span> off
+        </p> */}
+        </div>
+      )}
       <div className="comboWrap">
         {!isSmallScreen &&
           topPlans.map((item, index) => (
