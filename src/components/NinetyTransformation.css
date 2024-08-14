@@ -111,7 +111,7 @@
 
 .ninetyOverlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -214,11 +214,11 @@
   .beforeImg .ninetyOverlay,
   .afterImg .ninetyOverlay {
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.768);
+    background-color: rgba(0, 0, 0, 0.408);
     width: 100%;
     text-align: center;
     padding: 0.5rem 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     z-index: 2;
   }
   .beforeImg .ninetyOverlay {
@@ -326,7 +326,8 @@
     background-color: black;
   }
   .tfSectionImg img {
-    border-bottom-right-radius: 1rem;
+    /* border-bottom-right-radius: 1rem; */
+    border-top-right-radius: 0;
   }
   /* .tfSectionImg {
     border: 1px solid red;

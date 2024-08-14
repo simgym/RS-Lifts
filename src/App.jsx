@@ -26,6 +26,7 @@ function App() {
   const planDetails = [
     {
       poster: superBeginning,
+      media: [superBeginning, "kyRZOtN89s4"],
       title: "SUPER BEGINNING",
       target: "For Beginners",
       mrp: 6000,
@@ -61,6 +62,7 @@ function App() {
     },
     {
       poster: superShred,
+      media: [superShred, "kyRZOtN89s4"],
       title: "SUPER SHRED",
       target: "For Fat Loss and getting Lean",
       mrp: 6000,
@@ -97,6 +99,7 @@ function App() {
 
     {
       poster: superBulk,
+      media: [superBulk, "kyRZOtN89s4"],
       title: "SUPER BULK",
       target: "For Muscle Building and Gaining  Strength",
       mrp: 6000,
@@ -132,6 +135,7 @@ function App() {
     },
     {
       poster: consultImg,
+      media: [consultImg, "kyRZOtN89s4"],
       title: "Video Consultation",
       mrp: 2000,
       price: 1000,
@@ -166,6 +170,7 @@ function App() {
     },
     {
       poster: consultImg,
+      media: [consultImg, "kyRZOtN89s4"],
       title: "Online Personal Training",
       mrp: 2000,
       price: 1000,
@@ -218,6 +223,7 @@ function App() {
     },
     {
       poster: beforeImage,
+      media: [beforeImage, "kyRZOtN89s4"],
       title: "SUPER BEGINNING + SUPER SHRED",
       mrp: 3000,
       price: 1500,
@@ -251,6 +257,7 @@ function App() {
     },
     {
       poster: beforeImage,
+      media: [beforeImage, "kyRZOtN89s4"],
       title: "SUPER BEGINNING + SUPER BULK",
       mrp: 3000,
       price: 1500,
@@ -284,6 +291,7 @@ function App() {
     },
     {
       poster: beforeImage,
+      media: [beforeImage, "kyRZOtN89s4"],
       title: "90-Day Online Body Transformation Program",
       mrp: 3000,
       price: 1500,
@@ -314,7 +322,6 @@ function App() {
           include:
             "Continuous support and guidance available anytime you need it, right on your phone.",
         },
-        //
         {
           name: "Exercise Form Correction",
           include:

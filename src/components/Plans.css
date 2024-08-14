@@ -325,6 +325,7 @@
     flex-direction: column;
     margin-top: 8%;
     margin-bottom: 8%;
+    gap: 15px;
   }
   .bottomPlanName {
     padding: 3% 0%;
