@@ -33,7 +33,7 @@ function App() {
         {
           name: "EXERCISE DEMONSTRATION VIDEOS",
           include:
-            "Access to videos showing correct form and techniques for each exercise, with detailed instructions to ensure safe and effective workouts. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
+            "Exclusive access to videos showing you exactly how to perform each exercise, ensuring perfect form every time. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
         },
         {
           name: "BASIC NUTRITION GUIDANCE VIDEO",
@@ -69,7 +69,7 @@ function App() {
         {
           name: "EXERCISE DEMONSTRATION VIDEOS",
           include:
-            "Access to videos showing correct form and techniques for each exercise, with detailed instructions to ensure safe and effective workouts. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
+            "Exclusive access to videos showing you exactly how to perform each exercise, ensuring perfect form every time. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
         },
         {
           name: "BASIC NUTRITION GUIDANCE VIDEO",
@@ -106,7 +106,7 @@ function App() {
         {
           name: "EXERCISE DEMONSTRATION VIDEOS",
           include:
-            "Access to videos showing correct form and techniques for each exercise, with detailed instructions to ensure safe and effective workouts. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on the exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
+            "Exclusive access to videos showing you exactly how to perform each exercise, ensuring perfect form every time. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
         },
         {
           name: "BASIC NUTRITION GUIDANCE VIDEO",
@@ -127,7 +127,7 @@ function App() {
     },
     {
       poster: consultImg,
-      media: [consultImg, "kyRZOtN89s4", collection],
+      media: [consultImg, "kyRZOtN89s4"],
       title: "Video Consultation",
       mrp: 2000,
       price: 1000,
@@ -162,7 +162,7 @@ function App() {
     },
     {
       poster: consultImg,
-      media: [consultImg, "kyRZOtN89s4", collection],
+      media: [consultImg, "kyRZOtN89s4"],
       title: "Online Personal Training",
       mrp: 2000,
       price: 1000,
@@ -185,7 +185,7 @@ function App() {
         },
         {
           name: "Flexible Scheduling",
-          include: " Schedule training sessions at your convenience.",
+          include: " Schedule training sessions as per slot availability.",
         },
         {
           name: "On-the-Spot Motivation",
@@ -302,7 +302,7 @@ function App() {
         {
           name: "Exercise Demonstration Videos",
           include:
-            "Exclusive access to videos showing you exactly how to perform each exercise, ensuring perfect form every time.",
+            "Exclusive access to videos showing you exactly how to perform each exercise, ensuring perfect form every time. Rohit Sharma himself appears in the tutorials to perfectly demonstrate the exercises with just a click on exercise name which is a link, helping you understand and perform each exercise correctly, minimizing the risk of injury and maximizing results.",
         },
         {
           name: "Initial Voice Call with Rohit Sharma",

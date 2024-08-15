@@ -79,35 +79,38 @@ const SuperPlanDetails = ({ details }) => {
       <div className="sdHead">
         <div className="sdImg" ref={sliderRef}>
           <div className="sdSelectedImgWrap">
-            {" "}
             <div className="sdSelectedMedia">
               {isSmallScreen ? (
-                currentMediaIndex === 0 ? (
+                currentMediaIndex === 0 && details.media[0] ? (
                   <img src={details.media[0]} alt={details.title} />
-                ) : currentMediaIndex === 1 ? (
+                ) : currentMediaIndex === 1 && details.media[1] ? (
                   <iframe
                     src={`https://www.youtube.com/embed/${details.media[1]}`}
                     title={details.title}
                   />
-                ) : (
+                ) : currentMediaIndex === 2 && details.media[2] ? (
                   <img src={details.media[2]} alt={details.title} />
+                ) : (
+                  <div>No media available</div>
                 )
-              ) : showVid ? (
+              ) : showVid && details.media[1] ? (
                 <iframe
                   src={`https://www.youtube.com/embed/${details.media[1]}`}
                   title={details.title}
                 />
-              ) : (
+              ) : details.media[showImg ? 0 : 2] ? (
                 <img
                   src={showImg ? details.media[0] : details.media[2]}
                   alt={details.title}
                 />
+              ) : (
+                <div>No media available</div>
               )}
             </div>
           </div>
-          {!isSmallScreen && (
+          {!isSmallScreen && details.media.length > 0 && (
             <div className="sdImgRow">
-              <div className="sdSubImg">
+              {details.media[0] && (
                 <div className="sdImgWrapper">
                   <img
                     src={details.media[0]}
@@ -118,6 +121,8 @@ const SuperPlanDetails = ({ details }) => {
                     alt="Thumbnail 1"
                   />
                 </div>
+              )}
+              {details.media[2] && (
                 <div className="sdImgWrapper">
                   <img
                     src={details.media[2]}
@@ -128,6 +133,8 @@ const SuperPlanDetails = ({ details }) => {
                     alt="Thumbnail 2"
                   />
                 </div>
+              )}
+              {details.media[1] && (
                 <div className="sdImgWrapper">
                   <img
                     src={details.media[0]}
@@ -138,20 +145,19 @@ const SuperPlanDetails = ({ details }) => {
                     alt="Thumbnail Video"
                   />
                 </div>
-              </div>
+              )}
             </div>
           )}
           {isSmallScreen && (
             <div className="detailplanInd">
-              <span className={currentMediaIndex === 0 ? "" : "detailnormInd"}>
-                <FaCircle />
-              </span>
-              <span className={currentMediaIndex === 1 ? "" : "detailnormInd"}>
-                <FaCircle />
-              </span>
-              <span className={currentMediaIndex === 2 ? "" : "detailnormInd"}>
-                <FaCircle />
-              </span>
+              {details.media.map((_, index) => (
+                <span
+                  key={index}
+                  className={currentMediaIndex === index ? "" : "detailnormInd"}
+                >
+                  <FaCircle />
+                </span>
+              ))}
             </div>
           )}
         </div>

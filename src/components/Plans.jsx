@@ -26,7 +26,7 @@ const Plans = () => {
         "Overcome Plateaus",
       ],
       img: superShred,
-      desc: "12-week PROGRESSIVELY INTENSE program to shred fat and get lean",
+      desc: "12-week PROGRESSIVELY INTENSE program to get a shredded and lean body",
       url: "/home/plan/superplans/supershred",
     },
     {
