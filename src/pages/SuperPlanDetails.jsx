@@ -63,11 +63,11 @@ const SuperPlanDetails = ({ details }) => {
   }, [isSmallScreen]);
 
   const handleNextMedia = () => {
-    setCurrentMediaIndex((prevIndex) => (prevIndex + 1) % 2);
+    setCurrentMediaIndex((prevIndex) => (prevIndex + 1) % 3);
   };
 
   const handlePrevMedia = () => {
-    setCurrentMediaIndex((prevIndex) => (prevIndex === 0 ? 1 : prevIndex - 1));
+    setCurrentMediaIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
   };
 
   const toggleDescription = (index) => {
@@ -78,42 +78,66 @@ const SuperPlanDetails = ({ details }) => {
     <div className="sdWrap">
       <div className="sdHead">
         <div className="sdImg" ref={sliderRef}>
-          <div className="sdSelectedMedia">
-            {isSmallScreen ? (
-              currentMediaIndex === 0 ? (
-                <img src={details.media[0]} alt={details.title} />
-              ) : (
+          <div className="sdSelectedImgWrap">
+            {" "}
+            <div className="sdSelectedMedia">
+              {isSmallScreen ? (
+                currentMediaIndex === 0 ? (
+                  <img src={details.media[0]} alt={details.title} />
+                ) : currentMediaIndex === 1 ? (
+                  <iframe
+                    src={`https://www.youtube.com/embed/${details.media[1]}`}
+                    title={details.title}
+                  />
+                ) : (
+                  <img src={details.media[2]} alt={details.title} />
+                )
+              ) : showVid ? (
                 <iframe
                   src={`https://www.youtube.com/embed/${details.media[1]}`}
                   title={details.title}
                 />
-              )
-            ) : showVid ? (
-              <iframe
-                src={`https://www.youtube.com/embed/${details.media[1]}`}
-                title={details.title}
-              />
-            ) : (
-              <img src={details.poster} alt={details.title} />
-            )}
+              ) : (
+                <img
+                  src={showImg ? details.media[0] : details.media[2]}
+                  alt={details.title}
+                />
+              )}
+            </div>
           </div>
           {!isSmallScreen && (
             <div className="sdImgRow">
               <div className="sdSubImg">
-                <img
-                  src={details.media[0]}
-                  onClick={() => {
-                    setShowImg(true);
-                    setShowVid(false);
-                  }}
-                />
-                <img
-                  src={details.media[0]}
-                  onClick={() => {
-                    setShowVid(true);
-                    setShowImg(false);
-                  }}
-                />
+                <div className="sdImgWrapper">
+                  <img
+                    src={details.media[0]}
+                    onClick={() => {
+                      setShowImg(true);
+                      setShowVid(false);
+                    }}
+                    alt="Thumbnail 1"
+                  />
+                </div>
+                <div className="sdImgWrapper">
+                  <img
+                    src={details.media[2]}
+                    onClick={() => {
+                      setShowVid(false);
+                      setShowImg(false);
+                    }}
+                    alt="Thumbnail 2"
+                  />
+                </div>
+                <div className="sdImgWrapper">
+                  <img
+                    src={details.media[0]}
+                    onClick={() => {
+                      setShowVid(true);
+                      setShowImg(false);
+                    }}
+                    alt="Thumbnail Video"
+                  />
+                </div>
               </div>
             </div>
           )}
@@ -123,6 +147,9 @@ const SuperPlanDetails = ({ details }) => {
                 <FaCircle />
               </span>
               <span className={currentMediaIndex === 1 ? "" : "detailnormInd"}>
+                <FaCircle />
+              </span>
+              <span className={currentMediaIndex === 2 ? "" : "detailnormInd"}>
                 <FaCircle />
               </span>
             </div>

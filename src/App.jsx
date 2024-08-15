@@ -9,6 +9,7 @@ import beforeImage from "./assets/6O9A2315.jpg";
 import superBeginning from "./assets/superBeginning.jpg";
 import superBulk from "./assets/superBulk.jpg";
 import superShred from "./assets/superShred.jpg";
+import collection from "./assets/collection.jpg";
 import "./App.css";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   const planDetails = [
     {
       poster: superBeginning,
-      media: [superBeginning, "kyRZOtN89s4"],
+      media: [superBeginning, "kyRZOtN89s4", collection],
       title: "SUPER BEGINNING",
       target: "For Beginners",
       mrp: 6000,
@@ -53,7 +54,7 @@ function App() {
     },
     {
       poster: superShred,
-      media: [superShred, "kyRZOtN89s4"],
+      media: [superShred, "kyRZOtN89s4", collection],
       title: "SUPER SHRED",
       target: "For Fat Loss and getting Lean",
       mrp: 6000,
@@ -90,7 +91,7 @@ function App() {
 
     {
       poster: superBulk,
-      media: [superBulk, "kyRZOtN89s4"],
+      media: [superBulk, "kyRZOtN89s4", collection],
       title: "SUPER BULK",
       target: "For Muscle Building and Gaining  Strength",
       mrp: 6000,
@@ -126,7 +127,7 @@ function App() {
     },
     {
       poster: consultImg,
-      media: [consultImg, "kyRZOtN89s4"],
+      media: [consultImg, "kyRZOtN89s4", collection],
       title: "Video Consultation",
       mrp: 2000,
       price: 1000,
@@ -161,7 +162,7 @@ function App() {
     },
     {
       poster: consultImg,
-      media: [consultImg, "kyRZOtN89s4"],
+      media: [consultImg, "kyRZOtN89s4", collection],
       title: "Online Personal Training",
       mrp: 2000,
       price: 1000,
@@ -214,7 +215,7 @@ function App() {
     },
     {
       poster: beforeImage,
-      media: [beforeImage, "kyRZOtN89s4"],
+      media: [beforeImage, "kyRZOtN89s4", collection],
       title: "SUPER BEGINNING + SUPER SHRED",
       mrp: 3000,
       price: 1500,
@@ -248,7 +249,7 @@ function App() {
     },
     {
       poster: beforeImage,
-      media: [beforeImage, "kyRZOtN89s4"],
+      media: [beforeImage, "kyRZOtN89s4", collection],
       title: "SUPER BEGINNING + SUPER BULK",
       mrp: 3000,
       price: 1500,
@@ -282,7 +283,7 @@ function App() {
     },
     {
       poster: beforeImage,
-      media: [beforeImage, "kyRZOtN89s4"],
+      media: [beforeImage, "kyRZOtN89s4", collection],
       title: "90-Day Online Body Transformation Program",
       mrp: 3000,
       price: 1500,

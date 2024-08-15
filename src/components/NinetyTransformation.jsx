@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-// import TransformationSlider from "./TransformationSlider";
 import beforeImage from "../assets/beforeTransformation2.jpeg";
 import afterImage from "../assets/afterTransformation4.jpeg";
-
 import { Link } from "react-router-dom";
 import "./NinetyTransformation.css";
 
@@ -18,28 +16,43 @@ const NinetyTransformation = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const renderImages = () => (
+    <div className="tfSectionImg">
+      <div className="beforeImg">
+        <img src={beforeImage} />
+        <div className="ninetyOverlay">
+          <p>Before</p>
+        </div>
+      </div>
+      <div className="afterImg">
+        <img src={afterImage} />
+        <div className="ninetyOverlay">
+          <p>After</p>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="tfSectionWrapper">
-      {/* <div className="tfDisc">
-        <p>60% OFF</p>
-      </div> */}
-
       {!isSmallScreen && (
         <div className="tfWrap">
           <div className="tfSectionCont">
             <span className="tfSecHead">
               <h2>
-                <span>90 DAYS</span> ONLINE TRANSFORMATION PROGRAM
+                <span>90 DAYS</span> ONLINE BODY TRANSFORMATION PROGRAM
               </h2>
             </span>
             <span className="tfSecQuote">
               <p>
-                Join our 90 Days Body Transformation Program and achieve your
-                fitness goals with personalized online coaching by Rohit Sharma.
-                This program offers custom exercise plans and tailored nutrition
-                guidance to help you reduce fat, build muscle, and improve
-                posture and metabolism. Start your journey today and unlock your
-                full potential!
+                Join our 90 Days Body Transformation Program, led by expert
+                fitness coach Rohit Sharma, and achieve your fitness goals with
+                personalized online coaching. Rohit will provide you with custom
+                exercise plans and tailored nutrition guidance to help you
+                reduce fat, build muscle, and improve posture and metabolism.
+                Start your journey today with Rohit's expert training and unlock
+                your full potential!
               </p>
             </span>
 
@@ -49,40 +62,7 @@ const NinetyTransformation = () => {
               </Link>
             </span>
           </div>
-          {isTabScreen && (
-            <div className="tfSectionImg">
-              {/* <TransformationSlider /> */}
-              <div className="beforeImg">
-                <img src={beforeImage} />
-                <div className="ninetyOverlay">
-                  <p>Before</p>
-                </div>
-              </div>
-              <div className="afterImg">
-                <img src={afterImage} />
-                <div className="ninetyOverlay">
-                  <p>After</p>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {!isTabScreen && (
-            <div className="tfSectionImg">
-              <div className="beforeImg">
-                {/* <p>Before</p> */}
-                <img src={beforeImage} />
-              </div>
-              <div className="afterImg">
-                {/* <p>After</p> */}
-                <img src={afterImage} />
-              </div>
-            </div>
-          )}
-
-          {/* <div className="tfSectionImg">
-            <TransformationSlider />
-          </div> */}
+          {renderImages()}
         </div>
       )}
       {isSmallScreen && (
@@ -90,21 +70,21 @@ const NinetyTransformation = () => {
           <div className="tfSectionCont">
             <span className="tfSecHead">
               <h2>
-                <span className="daysSpan">90 DAYS</span> ONLINE TRANSFORMATION
-                PROGRAM
+                <span className="daysSpan">90 DAYS</span> ONLINE BODY
+                TRANSFORMATION PROGRAM
               </h2>
             </span>
             <div className="tfFoot">
               <div className="tfQuoteButton">
-                {" "}
                 <span className="tfSecQuote">
                   <p>
-                    Join our 90 Days Body Transformation Program and achieve
-                    your fitness goals with personalized online coaching by
-                    Rohit Sharma. This program offers custom exercise plans and
-                    tailored nutrition guidance to help you reduce fat, build
-                    muscle, and improve posture and metabolism. Start your
-                    journey today and unlock your full potential!
+                    Join our 90 Days Body Transformation Program, led by expert
+                    fitness coach Rohit Sharma, and achieve your fitness goals
+                    with personalized online coaching. Rohit will provide you
+                    with custom exercise plans and tailored nutrition guidance
+                    to help you reduce fat, build muscle, and improve posture
+                    and metabolism. Start your journey today with Rohit's expert
+                    training and unlock your full potential!
                   </p>
                 </span>
                 <span className="tfSecButton">
@@ -113,21 +93,7 @@ const NinetyTransformation = () => {
                   </Link>
                 </span>
               </div>
-              <div className="tfSectionImg">
-                {/* <TransformationSlider /> */}
-                <div className="beforeImg">
-                  <img src={beforeImage} />
-                  <div className="ninetyOverlay">
-                    <p>Before</p>
-                  </div>
-                </div>
-                <div className="afterImg">
-                  <img src={afterImage} />
-                  <div className="ninetyOverlay">
-                    <p>After</p>
-                  </div>
-                </div>
-              </div>
+              {renderImages()}
             </div>
           </div>
         </div>

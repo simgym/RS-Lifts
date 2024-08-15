@@ -47,7 +47,7 @@ const Plans = () => {
     },
     {
       name: "ONE TO ONE PERSONAL TRAINING",
-      desc: "Online Live Transformation Video on Video Call",
+      desc: "Online Live one-to-one Personal Training Sessions",
       img: consultImg1,
       url: "/home/plan/onlinept",
     },
