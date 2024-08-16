@@ -12,7 +12,6 @@ const Discount = ({ setShowDiscount }) => {
         <p>Grab Now</p>
       </div>
       <div className="dsCont">
-        {/* <h2>Mention Offers here</h2> */}
         <h2>
           <span style={{ color: "red", fontSize: "1.7rem" }}>90 DAYS</span> BODY
           TRANSFORMATION PROGRAM

@@ -15,6 +15,7 @@ import "./App.css";
 function App() {
   const [showDiscount, setShowDiscount] = useState(false);
 
+  // Array for all plan details apart from Ninety day plan
   const planDetails = [
     {
       poster: superBeginning,
@@ -389,6 +390,7 @@ function App() {
     },
   ]);
 
+  // for handling discount pop up on homepage
   useEffect(() => {
     const initialTimeout = setTimeout(() => {
       setShowDiscount(true);

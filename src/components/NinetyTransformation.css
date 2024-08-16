@@ -136,7 +136,7 @@
   content: "After";
 }
 .beforeImg {
-  z-index: 2;
+  /* z-index: 2; */
   transform: rotateY(0deg);
   animation: flipAnimation 4s infinite;
 }

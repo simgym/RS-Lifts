@@ -72,8 +72,6 @@ const Testimonials = () => {
       <div className="testFoot">
         {duplicatedTestimonials.map((item, index) => (
           <div key={index} className="testimonial">
-            {/* <h2>90 Days Transformation</h2> */}
-            {/* <div className="testimonialCont"> */}{" "}
             <div className="testImgCont">
               <img src={item.img} alt={`testimonial-${item.name}`} />
             </div>
@@ -81,7 +79,6 @@ const Testimonials = () => {
               <p className="testRev">{item.review}</p>
             </div>
           </div>
-          // </div>
         ))}
       </div>
     </div>

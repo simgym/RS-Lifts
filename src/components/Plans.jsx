@@ -59,6 +59,7 @@ const Plans = () => {
 
   const topSliderRef = useRef(null);
 
+  // Handle screen resize to detect small screens
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
@@ -67,6 +68,7 @@ const Plans = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Handle touch events and automatic slide change
   useEffect(() => {
     const topSlider = topSliderRef.current;
 
@@ -94,6 +96,7 @@ const Plans = () => {
       topSlider.addEventListener("touchend", handleTouchEnd);
     }
 
+    // Auto-slide to the next plan every 7 seconds
     const timer = setTimeout(() => {
       setCurrentTopIndex((prev) => (prev + 1) % topPlans.length);
     }, 7000);

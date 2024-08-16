@@ -30,6 +30,7 @@ const Combos = () => {
 
   const sliderRef = useRef(null);
 
+  // Effect to handle screen resizing
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
@@ -38,6 +39,7 @@ const Combos = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Effect to handle touch events for swiping on the slider
   useEffect(() => {
     const slider = sliderRef.current;
 
@@ -65,6 +67,7 @@ const Combos = () => {
       slider.addEventListener("touchend", handleTouchEnd);
     }
 
+    // Auto-slide to the next plan every 7 seconds
     const timer = setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % topPlans.length);
     }, 7000);
@@ -106,9 +109,6 @@ const Combos = () => {
           <h2>
             COMBO OFFERS - <span className="thirtyOff">30%</span> off
           </h2>
-          {/* <p>
-          <span className="thirtyOff">30%</span> off
-        </p> */}
         </div>
       )}
       <div className="comboWrap">

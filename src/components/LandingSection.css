@@ -71,50 +71,6 @@
   }
 }
 
-.dat {
-  border-radius: 50px;
-  border: 2px solid transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
-  padding: 15px 20px;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  background-color: black;
-}
-
-.movingPill {
-  width: 100px;
-  height: 100%;
-  background: radial-gradient(
-    circle at 125% 125%,
-    #31d2e8,
-    rgba(49, 210, 232, 1),
-    #4882ee
-  );
-  border-radius: 50px;
-  position: absolute;
-  top: 0;
-  animation: movePill 10s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes movePill {
-  0%,
-  100% {
-    left: 0;
-  }
-  50% {
-    left: calc(100% - 100px);
-  }
-}
-
-.dat p {
-  position: relative;
-  /* color: rgb(255, 255, 255); */
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
 .lsQuote {
   text-align: left;
   margin-top: 5%;
@@ -150,13 +106,6 @@
   .lsWrapper {
     flex-direction: column-reverse;
   }
-  .dat {
-    width: 100%;
-    margin-top: 2%;
-  }
-  .dat p {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -173,17 +122,9 @@
     width: 80%;
     text-align: center;
   }
-  .dat {
-    width: 95%;
-    margin-top: 5%;
-    padding: 15px 20px;
-  }
+
   .lsCont {
     padding: 0%;
-  }
-
-  .dat p {
-    font-size: 1rem;
   }
 
   .lsMission {
@@ -191,9 +132,7 @@
     width: 80%;
     margin-bottom: 3%;
   }
-  .movingPill {
-    animation: movePill 8s linear infinite;
-  }
+
   .lsShape {
     font-size: 3.2rem;
   }
@@ -206,17 +145,8 @@
   .lsShape {
     font-size: 2.5rem;
   }
-  .dat {
-    padding: 10px 10px;
-  }
-  .dat p {
-    font-size: 0.82rem;
-  }
 
   .lsMission {
     font-size: 0.9rem;
-  }
-  .movingPill {
-    animation: movePill 5s linear infinite;
   }
 }

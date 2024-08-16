@@ -6,16 +6,8 @@ import "./LandingSection.css";
 const LandingSection = () => {
   return (
     <div className="landpageWrapper">
-      {/* <div className="landNavWrapper">
-        <Navbar />
-      </div> */}
-
       <div className="lsWrapper">
         <div className="lsCont">
-          {/* <div className="dat">
-            <div className="movingPill"></div>
-            <p>{`DETERMINATION >ACTION >TRANSFORMATION`}</p>
-          </div> */}
           <div className="lsQuote">
             <p>
               <span className="lsShape">SHAPE</span> YOUR

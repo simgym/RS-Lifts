@@ -8,6 +8,7 @@ const NinetyTransformation = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 550);
   const [isTabScreen, setIsTabScreen] = useState(window.innerWidth <= 768);
 
+  // Handle screen resize to detect small screens
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 550);

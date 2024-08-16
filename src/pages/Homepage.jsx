@@ -9,8 +9,6 @@ import Testimonials from "../components/Testimonials";
 import "./Homepage.css";
 
 const Homepage = ({ setShowDiscount, showDiscount }) => {
-  //   const [showDiscount, setShowDiscount] = useState(false);
-
   return (
     <div className="homeWrap">
       {showDiscount && (

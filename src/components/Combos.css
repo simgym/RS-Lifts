@@ -1,5 +1,4 @@
 .plansWrap {
-  /* padding: 3% 3%; */
   color: rgb(255, 255, 255);
 }
 .thirtyOff {
@@ -11,8 +10,6 @@
   align-items: center;
   gap: 2%;
   padding: 2% 3%;
-  /* border: 1px solid rgb(0, 128, 255); */
-  /* margin-top: 1%; */
 }
 
 .comboPlan {
@@ -37,7 +34,6 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  /* border: 1px solid white; */
 }
 .comboServicesImg span {
   display: flex;
@@ -49,7 +45,6 @@
   flex: 1.5;
   position: relative;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 
 .comboImg img {
@@ -74,10 +69,6 @@
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.comboImg:hover .overlay {
-  /* bottom: 0; */
 }
 
 .comboFoot {
@@ -130,12 +121,6 @@
 }
 
 @media (min-width: 769px) {
-  .plansWrap {
-    /* padding: 3% 0%; */
-  }
-  /* .comboWrap {
-    padding: 1% 1%;
-  } */
   .comboPlan {
     width: 40%;
   }
@@ -170,9 +155,7 @@
   .comboPlan {
     width: 100%;
   }
-  .comboFoot {
-    /* margin: 5% 0%; */
-  }
+
   .comboButton {
     padding: 0% 2%;
   }
