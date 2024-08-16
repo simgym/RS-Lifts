@@ -56,7 +56,7 @@ function App() {
       poster: superShred,
       media: [superShred, "kyRZOtN89s4", collection],
       title: "SUPER SHRED",
-      target: "For Fat Loss and getting Lean",
+      target: "For achieving Shredded Body and Lean Muscles",
       mrp: 6000,
       price: 2000,
       desc: "This program is designed for individuals who have spent more than six months in the gym, have hit a plateau, and are struggling to lose fat and shape their bodies. This 12-week program is divided into two phases with modified volume and intensity for maximum fat loss and building a good amount of lean muscle mass. In this plan, you're going to experience something new which you might not have ever tried.",
@@ -96,7 +96,7 @@ function App() {
       target: "For Muscle Building and Gaining  Strength",
       mrp: 6000,
       price: 2000,
-      desc: "This program is designed for individuals who are focused on gaining muscle size and strength. Perfect for those who want to bulk up and see significant muscle gains, this 12-week program provides a structured approach to ensure maximum muscle growth and strength development. Feel the explosive strength and muscle growth like never before in this plan.",
+      desc: "This program is designed for individuals who are focused on gaining muscle size and strength. Perfect for those who want to bulk up and see significant muscle gains. This 12-week program provides a structured approach to ensure maximum muscle growth and strength development. Feel the explosive strength and muscle growth like never before in this plan.",
       services: [
         {
           name: "CUSTOMIZED WORKOUT PLAN (PDF)",
@@ -111,7 +111,7 @@ function App() {
         {
           name: "BASIC NUTRITION GUIDANCE VIDEO",
           include:
-            "Easy-to-follow dietary advice to support muscle growth with the right balance of macronutrients. This video provides sample meal plans and snack ideas that focus on high protein intake and caloric surplus to fuel muscle building.",
+            "Easy-to-follow dietary advice to support muscle growth with the right balance of macronutrients. This video provides sample meal plans and snack ideas that focus on high carb and protein intake and caloric surplus to fuel muscle building.",
         },
         {
           name: "PLAN EXPLANATION VIDEO",
@@ -168,6 +168,11 @@ function App() {
       price: 1000,
       desc: "Experience the ultimate convenience and effectiveness of personalized one-to-one personal training sessions, all from the comfort of your home. Whether you have a home gym, a few pieces of equipment, or none at all, our live online PT sessions ensure you perform every exercise correctly and efficiently.",
       services: [
+        {
+          name: "12 PT Sessions",
+          include:
+            " Unlock your full potential with 12 personalized training sessions. Whether you're just starting out or need to push through a plateau, these one-on-one sessions will help you achieve noticeable results, safely and efficiently.",
+        },
         {
           name: "Customized Workouts",
           include:

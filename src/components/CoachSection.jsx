@@ -44,13 +44,13 @@ const CoachSection = () => {
               <p>
                 <span className="coach-name"> Rohit Sharma</span> is a certified
                 fitness trainer and certified CrossFit trainer with
-                <span>18+ years</span> of coaching experience & has trained over{" "}
-                <span>25,000 clients</span>offline and online in the fitness
-                industry. He has also won many titles in bodybuilding and men’s
-                physique fitness model categories, including Mr. Delhi 1st Place
-                Bodybuilding, Mr. YMCA 3rd in 2013, Bodypower India Men’s
-                Physique (Top 5 Overall India) in 2015, and Mr. India Jerai
-                Classic Physique, Top 3 Overall India in 2017.
+                <span> 18+ years</span> of coaching experience & has trained
+                over <span>25,000 clients</span> offline and online in the
+                fitness industry. He has also won many titles in bodybuilding
+                and men’s physique fitness model categories, including Mr. Delhi
+                1st Place Bodybuilding, Mr. YMCA 3rd in 2013, Bodypower India
+                Men’s Physique (Top 5 Overall India) in 2015, and Mr. India
+                Jerai Classic Physique, Top 3 Overall India in 2017.
               </p>
             </div>
           </div>

@@ -1,11 +1,12 @@
 .sdWrap {
   margin-top: 100px;
+  border: 1px solid red;
 }
 
 .sdHead {
   display: flex;
   gap: 5%;
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 .sdImg {
@@ -15,6 +16,11 @@
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
+}
+.sdSelectedMedia iframe {
+  height: 398px;
+  width: 250px;
+  border: none;
 }
 .sdSelectedImgWrap {
   /* border: 1px solid white; */
@@ -38,12 +44,13 @@
   /* width: 100%; */
 }
 .sdImgRow {
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
   display: flex;
   /* justify-content: flex-end; */
   justify-content: center;
   /* padding-left: 10%; */
   width: 100%;
+  gap: 2%;
 }
 
 .sdImgWrapper {
@@ -58,7 +65,6 @@
   width: 100%;
 }
 .sdSubImg {
-  /* border: 1px solid rgb(55, 0, 255); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +90,7 @@
   display: flex;
   flex-direction: column;
   gap: 2%;
-  /* border: 1px solid yellowgreen; */
+  border: 1px solid yellowgreen;
 }
 
 .sdPrice {
@@ -209,6 +215,14 @@
   to {
     max-height: 100%;
     opacity: 1;
+  }
+}
+@media (min-width: 769px) {
+  .sdWrap {
+    min-width: 1024px;
+  }
+  .sdImgRow {
+    padding-top: 2%;
   }
 }
 

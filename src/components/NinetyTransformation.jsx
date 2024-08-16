@@ -47,12 +47,12 @@ const NinetyTransformation = () => {
             <span className="tfSecQuote">
               <p>
                 Join our 90 Days Body Transformation Program, led by expert
-                fitness coach Rohit Sharma, and achieve your fitness goals with
-                personalized online coaching. Rohit will provide you with custom
-                exercise plans and tailored nutrition guidance to help you
-                reduce fat, build muscle, and improve posture and metabolism.
-                Start your journey today with Rohit's expert training and unlock
-                your full potential!
+                fitness coach Rohit Sharma, and pursue your fitness goals with
+                personalized online coaching. Rohit will create custom exercise
+                plans and tailored nutrition guidance to help you reduce fat,
+                build muscle, and improve posture and metabolism, whether you
+                focus on one goal or a combination. Start your journey today
+                with Rohit’s expert training and unlock your full potential!
               </p>
             </span>
 
@@ -79,12 +79,13 @@ const NinetyTransformation = () => {
                 <span className="tfSecQuote">
                   <p>
                     Join our 90 Days Body Transformation Program, led by expert
-                    fitness coach Rohit Sharma, and achieve your fitness goals
-                    with personalized online coaching. Rohit will provide you
-                    with custom exercise plans and tailored nutrition guidance
-                    to help you reduce fat, build muscle, and improve posture
-                    and metabolism. Start your journey today with Rohit's expert
-                    training and unlock your full potential!
+                    fitness coach Rohit Sharma, and pursue your fitness goals
+                    with personalized online coaching. Rohit will create custom
+                    exercise plans and tailored nutrition guidance to help you
+                    reduce fat, build muscle, and improve posture and
+                    metabolism, whether you focus on one goal or a combination.
+                    Start your journey today with Rohit’s expert training and
+                    unlock your full potential!
                   </p>
                 </span>
                 <span className="tfSecButton">
