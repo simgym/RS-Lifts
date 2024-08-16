@@ -166,7 +166,7 @@ function App() {
       title: "Online Personal Training",
       mrp: 2000,
       price: 1000,
-      desc: "Experience the ultimate convenience and effectiveness of personalized one-to-one personal training sessions, all from the comfort of your home. Whether you have a home gym, a few pieces of equipment, or none at all, our live online PT sessions ensure you perform every exercise correctly and efficiently.",
+      desc: "Experience the ultimate convenience and effectiveness of personalized one-to-one personal training sessions, all from the comfort of your home. Whether you have a home gym, a few pieces of equipment, or none at all, our live online PT sessions with Rohit Sharma ensure you perform every exercise correctly and efficiently.",
       services: [
         {
           name: "12 PT Sessions",
