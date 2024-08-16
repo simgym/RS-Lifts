@@ -12,6 +12,7 @@ const SuperPlanDetails = ({ details }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
 
   const sliderRef = useRef(null);
+  const mediaCount = details.media.filter(Boolean).length;
 
   useEffect(() => {
     // Scroll to top when the component mounts
@@ -63,11 +64,13 @@ const SuperPlanDetails = ({ details }) => {
   }, [isSmallScreen]);
 
   const handleNextMedia = () => {
-    setCurrentMediaIndex((prevIndex) => (prevIndex + 1) % 3);
+    setCurrentMediaIndex((prevIndex) => (prevIndex + 1) % mediaCount);
   };
 
   const handlePrevMedia = () => {
-    setCurrentMediaIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
+    setCurrentMediaIndex((prevIndex) =>
+      prevIndex === 0 ? mediaCount - 1 : prevIndex - 1
+    );
   };
 
   const toggleDescription = (index) => {
@@ -81,18 +84,20 @@ const SuperPlanDetails = ({ details }) => {
           <div className="sdSelectedImgWrap">
             <div className="sdSelectedMedia">
               {isSmallScreen ? (
-                currentMediaIndex === 0 && details.media[0] ? (
-                  <img src={details.media[0]} alt={details.title} />
-                ) : currentMediaIndex === 1 && details.media[1] ? (
-                  <iframe
-                    src={`https://www.youtube.com/embed/${details.media[1]}`}
-                    title={details.title}
-                  />
-                ) : currentMediaIndex === 2 && details.media[2] ? (
-                  <img src={details.media[2]} alt={details.title} />
-                ) : (
-                  <div>No media available</div>
-                )
+                <>
+                  {currentMediaIndex === 0 && details.media[0] && (
+                    <img src={details.media[0]} alt={details.title} />
+                  )}
+                  {currentMediaIndex === 1 && details.media[1] && (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${details.media[1]}`}
+                      title={details.title}
+                    />
+                  )}
+                  {currentMediaIndex === 2 && details.media[2] && (
+                    <img src={details.media[2]} alt={details.title} />
+                  )}
+                </>
               ) : showVid && details.media[1] ? (
                 <iframe
                   src={`https://www.youtube.com/embed/${details.media[1]}`}
@@ -103,9 +108,7 @@ const SuperPlanDetails = ({ details }) => {
                   src={showImg ? details.media[0] : details.media[2]}
                   alt={details.title}
                 />
-              ) : (
-                <div>No media available</div>
-              )}
+              ) : null}
             </div>
           </div>
           {!isSmallScreen && details.media.length > 0 && (
